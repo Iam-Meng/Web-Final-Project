@@ -1,0 +1,205 @@
+{
+  "courseName": "C# Programming Full Course",
+  "questions": [
+    {
+      "question": "Who developed the C# programming language?",
+      "options": [
+        "Apple",
+        "Google",
+        "Microsoft",
+        "Oracle"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What is the correct syntax for printing 'Hello World' in C#?",
+      "options": [
+        "printf('Hello World');",
+        "cout << 'Hello World';",
+        "Console.WriteLine('Hello World');",
+        "print('Hello World');"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What is the file extension for C# source files?",
+      "options": [
+        ".csharp",
+        ".c#",
+        ".net",
+        ".cs"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which of the following is the entry point of a C# program?",
+      "options": [
+        "public static void main()",
+        "int main()",
+        "static void Main()",
+        "void main()"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What is the .NET Framework?",
+      "options": [
+        "A software framework developed by Microsoft",
+        "A programming language",
+        "A database system",
+        "An operating system"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which keyword is used to declare a class in C#?",
+      "options": [
+        "class",
+        "struct",
+        "interface",
+        "Class"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What is the difference between 'int' and 'Int32' in C#?",
+      "options": [
+        "Int32 is obsolete",
+        "int is for floating point",
+        "int is for 16-bit, Int32 for 32-bit",
+        "No difference, they are aliases"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which of the following is used for reading input from console in C#?",
+      "options": [
+        "Console.ReadLine()",
+        "cin",
+        "input()",
+        "scanf()"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What is a namespace in C#?",
+      "options": [
+        "A way to organize code and avoid name conflicts",
+        "A class member",
+        "A loop structure",
+        "A data type"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which keyword is used to inherit a class in C#?",
+      "options": [
+        "extends",
+        "inherits",
+        "implements",
+        ":"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What is the purpose of the 'using' statement in C#?",
+      "options": [
+        "To create loops",
+        "To define functions",
+        "To declare variables",
+        "To import namespaces or dispose resources"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which of the following is a reference type in C#?",
+      "options": [
+        "bool",
+        "char",
+        "string",
+        "int"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What is LINQ in C#?",
+      "options": [
+        "Language Integrated Query",
+        "A web framework",
+        "A database system",
+        "A UI library"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which keyword is used to define an interface in C#?",
+      "options": [
+        "contract",
+        "Interface",
+        "interface",
+        "abstract"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What is the purpose of the 'async' and 'await' keywords in C#?",
+      "options": [
+        "To handle asynchronous operations",
+        "To create threads",
+        "To handle exceptions",
+        "To define loops"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which of the following is a collection class in C#?",
+      "options": [
+        "ArrayList",
+        "Both A and B",
+        "None of the above",
+        "List<T>"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is the difference between '==' and 'Equals()' in C#?",
+      "options": [
+        "They are the same",
+        "== is for strings only",
+        "== compares references, Equals() compares values",
+        "== compares values, Equals() compares references"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which exception is thrown when dividing by zero in C#?",
+      "options": [
+        "ArithmeticException",
+        "Exception",
+        "InvalidOperationException",
+        "DivideByZeroException"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What is a delegate in C#?",
+      "options": [
+        "A class member",
+        "A loop structure",
+        "A type that represents references to methods",
+        "A data type"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which of the following is used to handle exceptions in C#?",
+      "options": [
+        "try-catch-finally",
+        "handle-catch",
+        "try-except",
+        "catch-throw"
+      ],
+      "correct": 0
+    }
+  ]
+}

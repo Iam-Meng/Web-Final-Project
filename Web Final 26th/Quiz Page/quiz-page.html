@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - Quiz</title>
+    <link rel="stylesheet" href="quiz-page.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav>
+      <i
+        class="fa-solid fa-bars"
+        id="openSidebar"
+        style="font-size: 24px"
+        onclick="openSidebar()"
+      ></i>
+      <div class="logo">
+        <a href="../../landing.html">S3 School</a>
+      </div>
+      <ul id="sidebar">
+        <i class="fa-solid fa-xmark" id="closeSidebar" onclick="closebar()"></i>
+        <li><a href="../../home.html">Home</a></li>
+        <li><a href="../../about.html">About Us</a></li>
+        <li><a href="contact">Contact </a></li>
+        <li><a href="support">Support</a></li>
+      </ul>
+      <button>
+        <a href="#"><i class="fa-regular fa-circle-user"></i>Sign In</a>
+      </button>
+    </nav>
+    <div class="main">
+      <div class="sidebar">
+        <a href="../../landing.html"><button class="btn-back">back</button></a>
+        <!-- content part -->
+        <div class="sticky">
+          <h3>Contents</h3>
+          <a href="../../home.html">
+            <div><span>Course</span></div>
+          </a>
+          <a href="../../course-video.html">
+            <div><span>Course Video</span></div>
+          </a>
+          <a href="quizzes.html" id="stand">
+            <div><span>Quizzes</span></div>
+          </a>
+          <a href="../../entertainment.html">
+            <div><span>Entertainment</span></div>
+          </a>
+          <a href="../../quotes.html" id="last-child">
+            <div><span>Quotes</span></div>
+          </a>
+        </div>
+      </div>
+      <!-- course-content -->
+      <div class="middle">
+        <h2>Programming</h2>
+        <a href="../Taking Quiz/taking-quiz.html?course=1">
+          <div class="course">1, Introduction to C programming</div>
+        </a>
+        <a href="../Taking Quiz/taking-quiz.html?course=2">
+          <div class="course">2, Introduction to C++ programming</div>
+        </a>
+        <a href="../Taking Quiz/taking-quiz.html?course=3">
+          <div class="course">3, C# Programming Full Course</div>
+        </a>
+        <a href="../Taking Quiz/taking-quiz.html?course=4">
+          <div class="course">4, Java Tutorial for Beginner</div>
+        </a>
+        <a href="../Taking Quiz/taking-quiz.html?course=5">
+          <div class="course">5, Python Tutorial for Begineer</div>
+        </a>
+        <a href="../Taking Quiz/taking-quiz.html?course=6">
+          <div class="course">6, Data Structure & Algorithms</div>
+        </a>
+        <a href="../Taking Quiz/taking-quiz.html?course=7">
+          <div class="course">7, Object-Oriented Programming</div>
+        </a>
+        <a href="../Taking Quiz/taking-quiz.html?course=8">
+          <div class="course">8, Database Management(My SQL)</div>
+        </a>
+        <!-- Web development -->
+        <h2>Web Development Course</h2>
+        <a href="../Taking Quiz/taking-quiz.html?course=9">
+          <div class="course">9, Introduction to Web Design</div>
+        </a>
+        <a href="../Taking Quiz/taking-quiz.html?course=10">
+          <div class="course">10, UX/UI Design</div>
+        </a>
+        <a href="../Taking Quiz/taking-quiz.html?course=11">
+          <div class="course">11, HTML & CSS Fundamentals</div>
+        </a>
+        <a href="../Taking Quiz/taking-quiz.html?course=12">
+          <div class="course">12, JavaScript for Begineer</div>
+        </a>
+        <h2>Front-end Framework</h2>
+        <a href="../Taking Quiz/taking-quiz.html?course=13">
+          <div class="course">13, TypeScript Framework</div>
+        </a>
+        <!--JS Framework by Microsoft-->
+        <a href="../Taking Quiz/taking-quiz.html?course=14">
+          <div class="course">14, TailWind Frameworks</div>
+        </a>
+        <a href="../Taking Quiz/taking-quiz.html?course=15">
+          <div class="course">15, JavaScript Frameworks (React)</div>
+        </a>
+      </div>
+      <!-- whitespace -->
+    </div>
+    <!-- footer -->
+    <footer>
+      <div class="logo">
+        <a href="landing.html">S3 School</a>
+      </div>
+      <div class="footer-content">
+        <div class="footer-list">
+          <h3>Contents</h3>
+          <li><a href="home.html">Course</a></li>
+          <li><a href="#">Course Video</a></li>
+          <li><a href="#">Quizzes</a></li>
+          <li><a href="#">Entertainment</a></li>
+          <li><a href="#">Quotes</a></li>
+        </div>
+        <div class="footer-list">
+          <h3>Company</h3>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Support</a></li>
+        </div>
+        <div class="footer-list">
+          <h3>Social</h3>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">GitHub</a></li>
+        </div>
+        <div class="footer-list">
+          <h3>Legal</h3>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="copyright-text">
+          <p>&copy; 2024 S3 School. All rights reserved.</p>
+          <p>
+            Terms of Service | Privacy Policy | Student Code of Conduct |
+            Academic Policies
+          </p>
+        </div>
+        <div class="footer-logo">
+          <a href="#" style="margin-right: 1rem">
+            <i
+              class="fa-brands fa-facebook-f"
+              style="font-size: 24px; color: white"
+            ></i>
+          </a>
+          <a href="#" style="margin-right: 1rem">
+            <i
+              class="fa-brands fa-twitter"
+              style="font-size: 24px; color: white"
+            ></i>
+          </a>
+          <a href="#" style="margin-right: 1rem">
+            <i
+              class="fa-brands fa-linkedin-in"
+              style="font-size: 24px; color: white"
+            ></i>
+          </a>
+          <a href="#">
+            <i
+              class="fa-brands fa-github"
+              style="font-size: 24px; color: white"
+            ></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="quiz-page.js"></script>
+  </body>
+</html>

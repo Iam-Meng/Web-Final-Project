@@ -1,0 +1,205 @@
+{
+  "courseName": "Introduction to C++ programming",
+  "questions": [
+    {
+      "question": "Who developed the C++ programming language?",
+      "options": [
+        "Guido van Rossum",
+        "James Gosling",
+        "Dennis Ritchie",
+        "Bjarne Stroustrup"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What is the correct syntax for printing 'Hello World' in C++?",
+      "options": [
+        "System.out.println('Hello World');",
+        "cout << 'Hello World';",
+        "printf('Hello World');",
+        "print('Hello World');"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is the file extension for C++ source files?",
+      "options": [
+        ".c",
+        ".cpp",
+        ".java",
+        ".py"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which header file is required for input/output operations in C++?",
+      "options": [
+        "<iostream>",
+        "<conio.h>",
+        "<string.h>",
+        "<stdio.h>"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What does the 'using namespace std;' statement do?",
+      "options": [
+        "Declares a new namespace",
+        "Allows use of standard library functions without std:: prefix",
+        "Defines a class",
+        "Includes all header files"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which of the following is used to read input from user in C++?",
+      "options": [
+        "scanf()",
+        "gets()",
+        "input()",
+        "cin"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What is a class in C++?",
+      "options": [
+        "A variable type",
+        "A blueprint for creating objects",
+        "A loop structure",
+        "A function"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which keyword is used to create an object in C++?",
+      "options": [
+        "object",
+        "new",
+        "create",
+        "instance"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is inheritance in C++?",
+      "options": [
+        "A loop type",
+        "A data type",
+        "A way to declare variables",
+        "A mechanism to create new classes from existing classes"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which symbol is used for inheritance in C++?",
+      "options": [
+        "->",
+        ".",
+        "::",
+        ":"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What is polymorphism in C++?",
+      "options": [
+        "Function overloading",
+        "Ability of objects to take many forms",
+        "Multiple inheritance",
+        "Data encapsulation"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which of the following is a correct way to declare a class in C++?",
+      "options": [
+        "class MyClass { };",
+        "struct MyClass { };",
+        "myclass MyClass { };",
+        "Class MyClass { };"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What is a constructor in C++?",
+      "options": [
+        "A destructor function",
+        "A special member function called when object is created",
+        "A static function",
+        "A normal member function"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which keyword is used to declare a virtual function?",
+      "options": [
+        "abstract",
+        "virtual",
+        "interface",
+        "override"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is encapsulation in C++?",
+      "options": [
+        "Inheriting from multiple classes",
+        "Wrapping data and functions into a single unit",
+        "Dynamic memory allocation",
+        "Function overloading"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which access specifier makes members accessible only within the class?",
+      "options": [
+        "private",
+        "public",
+        "protected",
+        "internal"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What is the scope resolution operator in C++?",
+      "options": [
+        "->",
+        "::",
+        ":",
+        "."
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which of the following is used for dynamic memory allocation in C++?",
+      "options": [
+        "alloc and dealloc",
+        "malloc and free",
+        "new and delete",
+        "create and destroy"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What is a template in C++?",
+      "options": [
+        "A file inclusion mechanism",
+        "A way to create generic functions or classes",
+        "A macro definition",
+        "A preprocessor directive"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which header file is used for string operations in C++?",
+      "options": [
+        "<str>",
+        "<string.h>",
+        "<string>",
+        "<cstring>"
+      ],
+      "correct": 2
+    }
+  ]
+}

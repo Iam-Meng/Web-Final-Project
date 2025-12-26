@@ -1,0 +1,205 @@
+{
+  "courseName": "Python Tutorial for Beginner",
+  "questions": [
+    {
+      "question": "Who developed the Python programming language?",
+      "options": [
+        "Dennis Ritchie",
+        "James Gosling",
+        "Bjarne Stroustrup",
+        "Guido van Rossum"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What is the correct syntax for printing 'Hello World' in Python?",
+      "options": [
+        "printf('Hello World')",
+        "print('Hello World')",
+        "cout << 'Hello World'",
+        "System.out.println('Hello World')"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is the file extension for Python source files?",
+      "options": [
+        ".python",
+        ".py",
+        ".pyth",
+        ".p"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which of the following is used to define a function in Python?",
+      "options": [
+        "function",
+        "def",
+        "func",
+        "define"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is the purpose of indentation in Python?",
+      "options": [
+        "To comment code",
+        "To declare variables",
+        "To make code look nice",
+        "To define code blocks"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which of the following is a correct way to declare a variable in Python?",
+      "options": [
+        "var x = 5",
+        "x = 5",
+        "int x = 5",
+        "x := 5"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is a list in Python?",
+      "options": [
+        "A tuple",
+        "An immutable sequence",
+        "A mutable sequence of elements",
+        "A dictionary"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which of the following is used for reading input from user in Python?",
+      "options": [
+        "read()",
+        "input()",
+        "scanf()",
+        "cin"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is a dictionary in Python?",
+      "options": [
+        "A set of unique elements",
+        "A stack",
+        "A sequence of elements",
+        "A collection of key-value pairs"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which keyword is used for conditional statements in Python?",
+      "options": [
+        "switch",
+        "if",
+        "when",
+        "case"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is the purpose of the 'import' statement in Python?",
+      "options": [
+        "To declare variables",
+        "To create loops",
+        "To include modules or libraries",
+        "To define functions"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which of the following is a loop structure in Python?",
+      "options": [
+        "for and while",
+        "foreach",
+        "do-while",
+        "repeat-until"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What is a tuple in Python?",
+      "options": [
+        "A dictionary",
+        "A mutable sequence",
+        "A set",
+        "An immutable sequence of elements"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which of the following is used to handle exceptions in Python?",
+      "options": [
+        "catch-throw",
+        "try-except",
+        "try-catch",
+        "handle-catch"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is the purpose of the 'self' parameter in Python classes?",
+      "options": [
+        "To inherit from parent class",
+        "To refer to the current instance of the class",
+        "To define static methods",
+        "To create class variables"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which of the following is a built-in data type in Python?",
+      "options": [
+        "str",
+        "int",
+        "All of the above",
+        "float"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What is list comprehension in Python?",
+      "options": [
+        "A concise way to create lists",
+        "A way to reverse lists",
+        "A way to copy lists",
+        "A way to sort lists"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which module is used for regular expressions in Python?",
+      "options": [
+        "pattern",
+        "regex",
+        "regexp",
+        "re"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What is the purpose of the 'with' statement in Python?",
+      "options": [
+        "To handle exceptions",
+        "To define functions",
+        "To create loops",
+        "To handle file operations and ensure proper cleanup"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which of the following is used to create virtual environments in Python?",
+      "options": [
+        "virtualenv",
+        "pipenv",
+        "venv",
+        "All of the above"
+      ],
+      "correct": 3
+    }
+  ]
+}

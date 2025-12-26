@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>about us</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav>
+      <i
+        class="fa-solid fa-bars"
+        id="openSidebar"
+        style="font-size: 24px"
+        onclick="openSidebar()"
+      ></i>
+      <div class="logo"><a href="landing.html">S3 School</a></div>
+      <ul id="sidebar">
+        <i class="fa-solid fa-xmark" id="closeSidebar" onclick="closebar()"></i>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.us/contact.html">Contact </a></li>
+        <li><a href="support/support.html">Support</a></li>
+      </ul>
+      <button>
+        <a href="#"><i class="fa-regular fa-circle-user"></i>Sign In</a>
+      </button>
+    </nav>
+
+    <h2>OUR STORIES</h2>
+    <div class="grida">
+      <div class="para">
+        <p>
+          S3 School began with a simple idea: to make learning Information
+          Technology easier for students who struggled to find organized and
+          reliable resources online. <br /><br />To solve this, we created a
+          platform where all essential learning tools are placed in one place —
+          courses, quizzes, videos, entertainment, and study advice.
+          <br /><br />
+          As S3 School grew, it became more than just a learning site. It turned
+          into a supportive community that encourages students through
+          motivational quotes, fun content, and interactive features.Our story
+          continues as we work to make IT learning
+        </p>
+      </div>
+      <div class="img1"><img width="80%" src="/picture/bot3.jpg" alt="picture" /></div>
+    </div>
+    <div class="val"><h3>OUR VALUE</h3></div>
+    <div>
+        <div class="cards-container">
+            <div class="card">
+                <h3>Our Mission</h3>
+                <p>To organize and initiate resources online.</p>
+            </div>
+
+            <div class="card">
+                <h3>Our Vision</h3>
+                <p>To make IT learning more effective.</p>
+            </div>
+
+            <div class="card">
+                <h3>Our Core</h3>
+                <p>make our platform accessible, enjoyable and effective for everyone</p>
+            </div>
+
+            <div class="card">
+                <h3>Why We Started</h3>
+                <p>To help students organize lesson and find IT field is interesting.</p>
+            </div>
+        </div>
+    <div class ="member"><h3>TEAM MEMBER</h3></div>
+    <div class="card-container2">
+        <div class="card2">
+            <img width="250px" src="picture/ra.png" alt="member1"/>
+            <h3>LONG SOTHEARA</h3>
+            <p>LEADER</p>
+        </div>
+        <div class="card2">
+             <img width="250px" src="picture/meng.jpg" alt="member2"/>
+            <h3>POCH SEAVMENG</h3>
+            <p>MEMBER</p>
+        </div>
+        <div class="card2">
+             <img width="250px" src="picture/rak.jpg" alt="member3"/>
+            <h3>LY SOPEHARAK</h3>
+            <p>MEMBER</p>  
+        </div>
+    </div>
+     <footer>
+      <div class="logo"><a href="#">S3 School</a></div>
+      <div class="footer-content">
+        <div class="footer-list">
+          <h3>Contents</h3>
+          <li><a href="#">Course</a></li>
+          <li><a href="#">Course Video</a></li>
+          <li><a href="#">Quizzes</a></li>
+          <li><a href="#">Entertainment</a></li>
+          <li><a href="#">Quotes</a></li>
+        </div>
+        <div class="footer-list">
+          <h3>Company</h3>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Support</a></li>
+        </div>
+        <div class="footer-list">
+          <h3>Social</h3>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">GitHub</a></li>
+        </div>
+        <div class="footer-list">
+          <h3>Legal</h3>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="copyright-text">
+          <p>&copy; 2024 S3 School. All rights reserved.</p>
+          <p>
+            Terms of Service | Privacy Policy | Student Code of Conduct |
+            Academic Policies
+          </p>
+        </div>
+        <div class="footer-logo">
+          <a href="#" style="margin-right: 1rem"
+            ><i
+              class="fa-brands fa-facebook-f"
+              style="font-size: 24px; color: white"
+            ></i
+          ></a>
+          <a href="#" style="margin-right: 1rem"
+            ><i
+              class="fa-brands fa-twitter"
+              style="font-size: 24px; color: white"
+            ></i
+          ></a>
+          <a href="#" style="margin-right: 1rem"
+            ><i
+              class="fa-brands fa-linkedin-in"
+              style="font-size: 24px; color: white"
+            ></i
+          ></a>
+          <a href="#"
+            ><i
+              class="fa-brands fa-github"
+              style="font-size: 24px; color: white"
+            ></i
+          ></a>
+        </div>
+      </div>
+    </footer> 
+        <script>
+      const navbar = document.getElementById("sidebar");
+      function openSidebar() {
+        navbar.classList.add("show");
+      }
+      function closebar() {
+        navbar.classList.remove("show");
+      }
+    </script>
+  </body>
+</html> 

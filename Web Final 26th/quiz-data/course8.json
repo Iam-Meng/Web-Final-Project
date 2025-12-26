@@ -1,0 +1,205 @@
+{
+  "courseName": "Database Management(My SQL)",
+  "questions": [
+    {
+      "question": "What does SQL stand for?",
+      "options": [
+        "Standard Query Language",
+        "System Query Language",
+        "Simple Query Language",
+        "Structured Query Language"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What is MySQL?",
+      "options": [
+        "An operating system",
+        "A web server",
+        "A relational database management system",
+        "A programming language"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which command is used to create a database in MySQL?",
+      "options": [
+        "NEW DATABASE",
+        "MAKE DATABASE",
+        "CREATE DATABASE",
+        "ADD DATABASE"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which command is used to select data from a table?",
+      "options": [
+        "RETRIEVE",
+        "SELECT",
+        "FETCH",
+        "GET"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is a primary key in a database?",
+      "options": [
+        "A constraint on data type",
+        "A unique identifier for each record in a table",
+        "A foreign key reference",
+        "An index on a column"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which SQL clause is used to filter records?",
+      "options": [
+        "FILTER",
+        "CHECK",
+        "CONDITION",
+        "WHERE"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What is the purpose of the JOIN clause in SQL?",
+      "options": [
+        "To combine rows from two or more tables",
+        "To sort data",
+        "To group data",
+        "To filter data"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which of the following is a DDL command?",
+      "options": [
+        "UPDATE",
+        "CREATE",
+        "INSERT",
+        "SELECT"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is normalization in database design?",
+      "options": [
+        "Process of organizing data to minimize redundancy",
+        "Process of creating indexes",
+        "Process of creating views",
+        "Process of denormalizing data"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which normal form eliminates transitive dependencies?",
+      "options": [
+        "Boyce-Codd Normal Form (BCNF)",
+        "Second Normal Form (2NF)",
+        "Third Normal Form (3NF)",
+        "First Normal Form (1NF)"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What is a foreign key?",
+      "options": [
+        "A unique identifier",
+        "An index",
+        "A field that refers to primary key of another table",
+        "A constraint"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which command is used to modify existing records in a table?",
+      "options": [
+        "MODIFY",
+        "CHANGE",
+        "UPDATE",
+        "ALTER"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What is an index in a database?",
+      "options": [
+        "A view",
+        "A type of table",
+        "A data structure that improves speed of data retrieval",
+        "A constraint"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which SQL function is used to count records?",
+      "options": [
+        "MAX()",
+        "SUM()",
+        "COUNT()",
+        "AVG()"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What is a stored procedure?",
+      "options": [
+        "A temporary table",
+        "A trigger",
+        "A prepared SQL code that can be saved and reused",
+        "A view"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which command is used to remove records from a table?",
+      "options": [
+        "CLEAR",
+        "REMOVE",
+        "DROP",
+        "DELETE"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What is ACID in database transactions?",
+      "options": [
+        "Automatic, Consistent, Isolated, Durable",
+        "Access, Control, Integrity, Data",
+        "Atomicity, Consistency, Isolation, Durability",
+        "All, Complete, Independent, Done"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which SQL clause is used to sort the result set?",
+      "options": [
+        "GROUP BY",
+        "ORDER BY",
+        "ARRANGE BY",
+        "SORT BY"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is a view in MySQL?",
+      "options": [
+        "A stored procedure",
+        "An index",
+        "A virtual table based on result of SQL statement",
+        "A physical table"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which command is used to grant permissions in MySQL?",
+      "options": [
+        "PERMIT",
+        "ALLOW",
+        "ACCESS",
+        "GRANT"
+      ],
+      "correct": 3
+    }
+  ]
+}

@@ -1,0 +1,205 @@
+{
+  "courseName": "TypeScript Framework",
+  "questions": [
+    {
+      "question": "What is TypeScript?",
+      "options": [
+        "A superset of JavaScript with static typing",
+        "A library for JavaScript",
+        "A framework for JavaScript",
+        "A compiler for JavaScript"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Who developed TypeScript?",
+      "options": [
+        "Microsoft",
+        "Oracle",
+        "Facebook",
+        "Google"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What is the file extension for TypeScript files?",
+      "options": [
+        ".jsx",
+        ".js",
+        ".tsx",
+        ".ts"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which command is used to compile TypeScript to JavaScript?",
+      "options": [
+        "build",
+        "compile",
+        "transpile",
+        "tsc"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What is static typing in TypeScript?",
+      "options": [
+        "Dynamic typing",
+        "Type checking at runtime",
+        "Type checking at compile time",
+        "No type checking"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "How do you declare a variable with a specific type in TypeScript?",
+      "options": [
+        "let variableName = type;",
+        "variableName: type;",
+        "let variableName: type;",
+        "type variableName;"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What is an interface in TypeScript?",
+      "options": [
+        "A class implementation",
+        "A variable declaration",
+        "A way to define the structure of an object",
+        "A function definition"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which symbol is used for optional properties in interfaces?",
+      "options": [
+        "&",
+        "?",
+        "!",
+        "*"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is a generic in TypeScript?",
+      "options": [
+        "A way to create reusable components with different types",
+        "A function parameter",
+        "A specific data type",
+        "A class property"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "How do you define a generic function?",
+      "options": [
+        "function functionName(param: T): T",
+        "function functionName(param): T",
+        "function functionName<T>(param)",
+        "function functionName<T>(param: T): T"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What is the 'any' type in TypeScript?",
+      "options": [
+        "A type for objects only",
+        "A type for numbers only",
+        "A type for strings only",
+        "A type that can represent any JavaScript value"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What is type assertion in TypeScript?",
+      "options": [
+        "Telling the compiler to treat a value as a specific type",
+        "Converting types",
+        "Creating new types",
+        "Checking types"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which keyword is used to define a class in TypeScript?",
+      "options": [
+        "interface",
+        "Class",
+        "type",
+        "class"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What is access modifier 'private' used for?",
+      "options": [
+        "To allow access from anywhere",
+        "To restrict access to class members",
+        "To allow access from subclasses",
+        "To allow access from same package"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is a union type in TypeScript?",
+      "options": [
+        "A type for functions",
+        "A type that can be one of several types",
+        "A type that combines multiple types",
+        "A type for arrays"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "How do you define a union type?",
+      "options": [
+        "type - type",
+        "type & type",
+        "type + type",
+        "type | type"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What is the 'never' type in TypeScript?",
+      "options": [
+        "A type for undefined values",
+        "A type for null values",
+        "A type for values that never occur",
+        "A type for empty objects"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What is a tuple in TypeScript?",
+      "options": [
+        "An array with fixed number of elements of specific types",
+        "A function type",
+        "An array with variable elements",
+        "A special object"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which file contains TypeScript configuration?",
+      "options": [
+        "tsconfig.json",
+        "config.json",
+        "package.json",
+        "typescript.json"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What is the purpose of the 'readonly' modifier?",
+      "options": [
+        "To make properties private",
+        "To make properties optional",
+        "To make properties static",
+        "To make properties immutable after initialization"
+      ],
+      "correct": 3
+    }
+  ]
+}

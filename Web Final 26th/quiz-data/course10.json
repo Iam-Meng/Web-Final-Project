@@ -1,0 +1,205 @@
+{
+  "courseName": "UX/UI Design",
+  "questions": [
+    {
+      "question": "What does UX stand for?",
+      "options": [
+        "Universal Experience",
+        "User Exploration",
+        "User Extension",
+        "User Experience"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What does UI stand for?",
+      "options": [
+        "Universal Interface",
+        "User Interaction",
+        "User Integration",
+        "User Interface"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What is the main focus of UX design?",
+      "options": [
+        "Visual design and aesthetics",
+        "Content creation",
+        "Technical implementation",
+        "Overall user experience and satisfaction"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What is the main focus of UI design?",
+      "options": [
+        "User research and testing",
+        "Information architecture",
+        "Content strategy",
+        "Visual design and layout of interface elements"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What is a user persona?",
+      "options": [
+        "A design pattern",
+        "A fictional representation of target users",
+        "A real user in testing",
+        "A wireframe"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is a wireframe?",
+      "options": [
+        "A style guide",
+        "A prototype",
+        "A low-fidelity blueprint of page layout",
+        "A high-fidelity design mockup"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What is usability testing?",
+      "options": [
+        "Testing how easy a design is to use",
+        "Testing content quality",
+        "Testing technical performance",
+        "Testing visual appeal"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What is information architecture?",
+      "options": [
+        "Organizing and structuring information",
+        "Creating animations",
+        "Writing content",
+        "Designing visual elements"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What is a design system?",
+      "options": [
+        "A testing method",
+        "A single design file",
+        "A prototyping tool",
+        "A collection of reusable design elements and guidelines"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What is accessibility in design?",
+      "options": [
+        "Making designs fast to load",
+        "Making designs usable for people with disabilities",
+        "Making designs interactive",
+        "Making designs look modern"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is a user journey map?",
+      "options": [
+        "A map of website navigation",
+        "A visualization of user experience over time",
+        "A flowchart of user tasks",
+        "A diagram of user personas"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is the purpose of A/B testing?",
+      "options": [
+        "To validate user personas",
+        "To compare two versions of a design to see which performs better",
+        "To test for bugs",
+        "To check loading speed"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is a prototype?",
+      "options": [
+        "A final design",
+        "A style guide",
+        "A wireframe",
+        "An early model of a design that can be tested"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What is the difference between UX and UI?",
+      "options": [
+        "UX is about interface, UI is about experience",
+        "UX is about experience, UI is about interface",
+        "They are the same",
+        "UX is for mobile, UI is for web"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is a design pattern?",
+      "options": [
+        "A reusable solution to common design problems",
+        "A layout style",
+        "A font choice",
+        "A color scheme"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What is user-centered design?",
+      "options": [
+        "Design focused on business goals",
+        "Design focused on aesthetics",
+        "Design focused on technology",
+        "Design process focused on user needs and preferences"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What is a style guide?",
+      "options": [
+        "A testing checklist",
+        "A user manual",
+        "A project timeline",
+        "A document defining design standards and usage"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What is the purpose of user research?",
+      "options": [
+        "To create visual designs",
+        "To understand user needs, behaviors, and motivations",
+        "To write code",
+        "To test performance"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is responsive design?",
+      "options": [
+        "Design that loads quickly",
+        "Design that uses animations",
+        "Design that responds to user input",
+        "Design that adapts to different screen sizes"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What is the goal of UX/UI design?",
+      "options": [
+        "To make websites look pretty",
+        "To create intuitive and enjoyable user experiences",
+        "To follow design trends",
+        "To use the latest technologies"
+      ],
+      "correct": 1
+    }
+  ]
+}

@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Video</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=BBH+Bogle&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      body {
+        height: 200vh;
+        box-sizing: border-box;
+        color: rgb(0, 0, 0);
+        
+      }
+      nav {
+        position: sticky;
+        font-size: 1.1rem;
+        height: 35px;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: #15202b;
+        padding-right: 4rem;
+        padding-left: 6rem;
+        z-index: 11;
+        gap: 10px;
+        @media screen and (max-width: 800px) {
+          padding-right: 1rem;
+          padding-left: 1rem;
+        }
+      }
+      .logo a {
+        color: white;
+        text-decoration: none;
+        font-family: "BBH Bogle", sans-serif;
+        font-weight: 200;
+        font-size: 1.7rem;
+      }
+      .logo a:hover {
+        color: #3f8c4b;
+      }
+
+      .logo {
+        margin-right: auto;
+        font-size: 1.5rem;
+      }
+      ul {
+        list-style: none;
+        display: flex;
+        font-size: 1.1rem;
+        gap: 20px;
+        align-items: center;
+      }
+
+      ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 8px 10px;
+        border-radius: 4px;
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;
+      }
+      ul li:hover {
+        background-color: gray;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 15px;
+      }
+      .button a {
+        text-decoration: none;
+        color: white;
+      }
+      button {
+        padding: 8px 6px;
+        width: 100px;
+        border-radius: 0.5rem;
+        border: 1px solid #3f8c4b;
+        background-color: #3f8c4b;
+        color: white;
+        font-size: medium;
+        gap: 5px;
+        margin-left: 10px;
+      }
+      button a {
+        color: white;
+        text-decoration: none;
+      }
+      #openSidebar,
+      #closeSidebar {
+        display: none;
+        color: white;
+      }
+      ul.show {
+        left: 0;
+      }
+      @media screen and (max-width: 800px) {
+        ul {
+          position: fixed;
+          top: 6%;
+          /* bottom:10%; */
+          left: -100%;
+          width: min(15em, 100%);
+          height: 100vh;
+          font-size: 1.1rem;
+          z-index: 10;
+          flex-direction: column;
+          background-color: #15202b;
+          padding-top: 4rem;
+          transition: left 300ms ease-out;
+        }
+        ul li:hover {
+          width: 100%;
+          border-radius: 0;
+          padding: 0.5rem 0;
+          text-align: center;
+          border-radius: 0;
+        }
+        #closeSidebar {
+          display: block;
+          margin-left: auto;
+          margin-bottom: 20px;
+          margin-right: 30px;
+          cursor: pointer;
+        }
+        #openSidebar {
+          display: inline;
+          cursor: pointer;
+        }
+      }
+      footer {
+        background-color: #15202b;
+        color: white;
+        padding: 3.5rem;
+      }
+      .footer-list {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        gap: 20px;
+        text-align: left;
+      }
+      .footer-content {
+        display: flex;
+        justify-content: space-around;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+      }
+      footer h2 {
+        margin-bottom: 2rem;
+      }
+      .footer-list a {
+        text-decoration: none;
+        margin-top: 2rem;
+        color: white;
+      }
+      .footer-list a:hover {
+        color: #3f8c4b;
+      }
+      .copyright {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .footer-logo {
+        display: flex;
+        align-self: flex-end;
+        margin-top: -1rem;
+      }
+      @media screen and (max-width: 896px) {
+        .copyright {
+          display: block;
+        }
+        .footer-logo {
+          justify-content: flex-start;
+          align-items: center;
+          margin-top: 1rem;
+        }
+      }
+      @media screen and (max-width: 780px) {
+        .footer-content {
+          flex-direction: column;
+          gap: 2rem;
+          margin-left: 0;
+          margin-right: 0;
+        }
+        footer h2 {
+          text-align: center;
+          display: block;
+        }
+        .copyright {
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+        }
+        .footer-logo {
+          justify-content: center;
+          align-items: center;
+          margin-top: 1rem;
+        }
+      }
+      .sidebar {
+        height: auto;
+        width: 25%;
+        margin-left: 3rem;
+        margin-right: 3rem;
+      }
+      .main {
+        display: flex;
+        gap: 1rem;
+      }
+      .middle {
+        width: 45%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 0 2rem 3rem;
+      }
+      .middle h2 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding-left: 1rem;
+      }
+      .middle a {
+        text-decoration-color: white;
+        color: black;
+      }
+      .course {
+        border: 1.5px solid black;
+        padding: 1.5rem;
+        font-size: 1.15rem;
+        width: 85%;
+        height: 23px;
+        border-radius: 1.1rem;
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.5rem;
+        margin-top:1rem;
+        /* width: 80%; */
+      }
+      .course:hover {
+        background-color: #fafafa;
+      }
+      .middle a:hover {
+        text-decoration-color: white;
+      }
+      .course i {
+        transition: transform 0.3s ease;
+      }
+      .course.active i {
+        transform: rotate(90deg);
+      }
+      /* content part */
+      .sticky {
+        width: 19.5rem;
+        height: 400px;
+        position: sticky;
+        top: 90px;
+        /* margin-left: 5.5; */
+        margin-left: 20%;
+        border: 1.7px solid black;
+        border-radius: 1rem;
+        background-color: #fafaf9;
+        padding-top: 1rem;
+        z-index: 10;
+        margin-bottom: 1.5rem;
+        gap: 0.5rem;
+        display: flex;
+        flex-direction: column;
+      }
+      .btn-back {
+        padding: 0.8rem;
+        margin: 1.5rem 0.5rem 1.5rem 3rem;
+        font-size: 16px;
+        background-color: #3f8c4b;
+        color: white;
+        border: none;
+        border-radius: 0.7rem;
+        cursor: pointer;
+        transition: 0.2s ease;
+      }
+      .btn-back:hover {
+        transform: translate(-5px);
+      }
+      .sticky h3 {
+        padding-left: 1.5rem;
+        margin-top: 0.8rem;
+        margin-bottom: 0.8rem;
+        font-size: 1.4rem;
+      }
+      .sticky a {
+        list-style: none;
+        padding: 1rem 0rem 1rem 0rem;
+        font-size: 1.2rem;
+        width: 100%;
+        text-align: left;
+        height: 20%;
+      }
+      .sticky a:hover {
+        /* background-color: #a8a8af; */
+        background-color: #d6d6d6;
+        width: 100%;
+        border-radius: 0rem;
+        cursor: pointer;
+      }
+      #stand {
+        background-color: #3f8c4b;
+        color: white;
+      }
+
+      .sticky a {
+        text-decoration: none;
+        color: black;
+      }
+      .sticky span {
+        padding-left: 1.5rem;
+      }
+      #last-child {
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+      }
+      @media screen and (max-width: 1080px) {
+        .sticky {
+          width: 17.5rem;
+          margin-left: 8%;
+          border: 1px solid black;
+        }
+        .sticky a {
+          font-size: 1.1rem;
+          height: 10%;
+          padding: 0.8rem 0rem;
+        }
+        .sticky h3 {
+          padding-left: 1.2rem;
+          font-size: 1.2rem;
+          margin-bottom: 0.6rem;
+        }
+        .sticky span {
+          padding-left: 1.3rem;
+        }
+        .btn-back {
+          margin: 1.3rem 2rem;
+          padding: 0.6rem;
+          font-size: 18px;
+        }
+      }
+      @media screen and (max-width: 768px) {
+        .sidebar {
+          margin-left: 2rem;
+        }
+        .sticky {
+          width: 13rem;
+          margin-left: 1rem;
+          height: 300px;
+        }
+        .sticky h3 {
+          padding-left: 1rem;
+          font-size: 1.1rem;
+          margin-bottom: 0.6rem;
+        }
+        .sticky a {
+          padding: 0.95rem 0 0.3rem 0;
+        }
+        .sticky span {
+          padding-left: 1.1rem;
+        }
+        .btn-back {
+          margin: 1.3rem 1.3rem;
+          font-size: 16px;
+        }
+        .middle h2 {
+          font-size: 1.2rem;
+        }
+        .middle {
+          padding: 1rem 3rem;
+          width: 85%;
+        }
+        .course {
+          border: 1.2px solid black;
+          padding: 1rem 1.2rem;
+          font-size: 1rem;
+        }
+      }
+      @media screen and (max-width: 525px) {
+        .sidebar {
+          margin-left: 1rem;
+        }
+        .main {
+          flex-direction: column;
+        }
+        .middle {
+          padding: 1rem 1.5rem;
+          /* width: 75%; */
+          width: auto;
+        }
+        .sticky {
+          width: 80vw;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+        }
+        .sticky a {
+          text-align: center;
+        }
+        .btn-back {
+          margin: 0.35rem 0.35rem;
+        }
+      }
+      .video {
+        width:85%;
+        border-radius: 1.1rem;
+        max-height: 0;
+        overflow: hidden;
+        padding:0 1rem;
+        background-color: rgb(255, 255, 255);
+        transition: max-height 0.4s ease-out, padding 0.4s ease-out;
+      }
+      .video.active {
+        max-height: 350px;
+        border:1px solid black;
+        border-top-color: white;
+      }
+      .video iframe {
+        padding:0.4rem 0 2rem 0;
+        align-items: center;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav>
+      <i
+        class="fa-solid fa-bars"
+        id="openSidebar"
+        style="font-size: 24px"
+        onclick="openSidebar()"
+      ></i>
+      <div class="logo"><a href="landing.html">S3 School</a></div>
+      <ul  id="sidebar">
+        <i class="fa-solid fa-xmark" id="closeSidebar" onclick="closebar()"></i>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact">Contact </a></li>
+        <li><a href="support">Support</a></li>
+      </ul>
+      <button>
+        <a href="#"><i class="fa-regular fa-circle-user"></i>Sign In</a>
+      </button>
+    </nav>
+    <div class="main">
+      <div class="sidebar">
+        <a href="landing.html"><button class="btn-back">back</button></a>
+
+        <!-- content part -->
+        <div class="sticky">
+          <h3>Contents</h3>
+          <a href="home.html" 
+            ><div><span>Course</span></div></a
+          >
+          <a href="course-video.html" id = "stand"
+            ><div><span>Course Video</span></div></a
+          >
+          <a href="Web Final 26th/Quiz Page/quiz-page.html"
+            ><div><span>Quizzes</span></div></a
+          >
+          <a href="entertainment.html"
+            ><div><span>Entertainment</span></div></a
+          >
+          <a href="quotes.html" id="last-child"
+            ><div><span>Quotes</span></div></a
+          >
+        </div>
+      </div>
+      <!-- course-content -->
+      <div class="middle">
+        <h2>Programming</h2>
+        <a href="#" 
+          ><div class="course " ><span>1, Introduction to C programming</span> <i class="fa-solid fa-greater-than" style="font-size:0.8rem;margin-left:auto"></i>
+          </div>
+        </a>
+    
+        <div class="video">
+          <h4>Introduction to C Programming</h4>
+          <iframe width="100%" height="315px" src="https://www.youtube.com/embed/xND0t1pr3KY?si=b151hDO5_NZZMaof" title="YouTube video player" frameborder="0" allow="accelerometer; 
+          autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+           </div>
+  
+         <a href="#"><div class="course"><span>2, Introduction to C++ programming</span><i class="fa-solid fa-greater-than" style="font-size:0.8rem;margin-left:auto"></i></div></a>
+
+         <div class="video">
+          <h4>Introduction to C++ Programming</h4>
+          <iframe width="100%" height="315px" src="https://www.youtube.com/embed/SQ0MgUnvy44?si=D3p6T1DsbhxVx_HK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+           encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+         </div>
+
+        <a href="#"><div class="course"><span>3, C# Programming Full Course</span><i class="fa-solid fa-greater-than" style="font-size:0.8rem;margin-left:auto"></i></div></a>
+        <div class="video">
+          <h4>C# Full Course</h4>
+          <iframe width="100%" height="315px" src="https://www.youtube.com/embed/wxznTygnRfQ?si=CA6lIriaN4RUxAsc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+          picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        
+        <a href="#"><div class="course"><span>4, Java Tutorial for Beginner</span><i class="fa-solid fa-greater-than" style="font-size:0.8rem;margin-left:auto"></i></div></a>
+
+        <div class="video">
+          <h4>Java Full Course for Beginner</h4>
+          <iframe width="100%" height="315px" src="https://www.youtube.com/embed/eIrMbAQSU34?si=pJmv7GA1IhSHvoYb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+           gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <a href="#"><div class="course"><span>5, Python Tutorial for Beginner</span><i class="fa-solid fa-greater-than" style="font-size:0.8rem;margin-left:auto"></i></div></a>
+
+        <div class="video">
+          <h4>Python for Beginner</h4>
+         <iframe width="100%" height="315px" src="https://www.youtube.com/embed/8wInxp0m3pY?si=PZlkqJuDiVFwDQ4e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+         clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <a href="#"><div class="course"><span>6, Data Structure & Algorithms</span> <i class="fa-solid fa-greater-than" style="font-size:0.8rem;margin-left:auto"></i>
+        </div></a>
+        <div class="video">
+          <h4>Data Structure and Algorithms</h4>
+          <iframe width="100%" height="315px" src="https://www.youtube.com/embed/CBYHwZcbD-s?si=KV61JjpPoKrz79hJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
+           clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <a href="#"><div class="course"><span>7, Object-Oriented Programming</span><i class="fa-solid fa-greater-than" style="font-size:0.8rem;margin-left:auto"></i></div></a>
+        <div class="video">
+          <h4>Python Object Oriented Programming</h4>
+          <iframe width="100%" height="315px" src="https://www.youtube.com/embed/IbMDCwVm63M?si=E_voN1r-M2Er-x2F" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
+           clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <a href="#"><div class="course"><span>8, Database Management(My SQL)</span><i class="fa-solid fa-greater-than" style="font-size:0.8rem;margin-left:auto"></i></div></a> 
+        <div class="video">
+          <h4>SQL Full Course</h4>
+          <iframe width="100%" height="315px" src="https://www.youtube.com/embed/5OdVJbNCSso?si=4t8PbZ7X91HIVrp-" title="YouTube video player" frameborder="0" allow="accelerometer;
+           autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <!-- Web development -->
+         <h2>Web Development Course</h2> 
+        <a href="#"><div class="course"><span>9, Introduction to Web Design</span><i class="fa-solid fa-greater-than" style="font-size:0.8rem;margin-left:auto"></i></div></a>
+        <div class="video">
+          <h4>Introduction to Web Design</h4>
+          <iframe width="100%" height="315px" src="https://www.youtube.com/embed/GxmfcnU3feo?si=N0zqsdWcY6uG4TiS" title="YouTube video player" frameborder="0" allow="accelerometer; 
+          autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <a href="#"><div class="course"><span>10, UX/UI Design</span><i class="fa-solid fa-greater-than" style="font-size:0.8rem;margin-left:auto"></i></div></a>
+        <div class="video">
+          <h4>Fundamentals of UX/UI</h4>
+          <iframe width="100%" height="315px" src="https://www.youtube.com/embed/aC4W2A67PoY?si=uN6Ek3Gsd8eVXxky" title="YouTube video player" frameborder="0" allow="accelerometer; 
+          autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <a href="#"><div class="course"><span>11, HTML & CSS Fundamentals</span><i class="fa-solid fa-greater-than" style="font-size:0.8rem;margin-left:auto"></i></div></a>
+        <div class="video">
+          <h4>HTML&CSS Full Course</h4>
+          <iframe width="100%" height="315px" src="https://www.youtube.com/embed/G3e-cpL7ofc?si=XzU_m1h_2gjw36ua" title="YouTube video player" frameborder="0" allow="accelerometer;
+           autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <a href="#"><div class="course"><span>12, JavaScript for Begineer</span><i class="fa-solid fa-greater-than" style="font-size:0.8rem;margin-left:auto"></i></div></a>
+        <div class="video">
+          <h4>JavaScript Full Course</h4>
+          <iframe width="100%" height="315px" src="https://www.youtube.com/embed/lfmg-EJ8gm4?si=gEhEL8F8ZpFGQK9n" title="YouTube video player" frameborder="0" allow="accelerometer; 
+          autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <h2>Front-end Framework</h2>
+        <a href="#"><div class="course"><span>13, TypeScript Framework</span><i class="fa-solid fa-greater-than" style="font-size:0.8rem;margin-left:auto"></i></div></a>
+        <div class="video">
+          <h4>TypeScript Full Course</h4>
+          <iframe width="100%" height="315px" src="https://www.youtube.com/embed/d56mG7DezGs?si=XIzN1ZOvlyKiRx1n" title="YouTube video player" frameborder="0" allow="accelerometer; 
+          autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <a href="#"><div class="course"><span>14, TailWind Frameworks</span><i class="fa-solid fa-greater-than" style="font-size:0.8rem;margin-left:auto"></i></div></a>
+        <div class="video">
+          <h4>TailWind CSS </h4>
+          <iframe width="100%" height="315px" src="https://www.youtube.com/embed/6biMWgD6_JY?si=VP_SpuT6w-dGs1ff" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+          clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <a href="#"
+          ><div class="course"><span>15, JavaScript Frameworks (React)</span><i class="fa-solid fa-greater-than" style="font-size:0.8rem;margin-left:auto"></i></div></a >
+          <div class="video">
+            <h4>React Full Course</h4>
+            <iframe width="100%" height="315px" src="https://www.youtube.com/embed/CgkZ7MvWUAA?si=2ApxsFHo15vMxutM" title="YouTube video player" frameborder="0" allow="accelerometer; 
+            autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+
+       
+      </div>
+      <!-- whitespace -->
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <div class="logo"><a href="landing.html">S3 School</a></div>
+      <div class="footer-content">
+        <div class="footer-list">
+          <h3>Contents</h3>
+          <li><a href="home.html">Course</a></li>
+          <li><a href="#">Course Video</a></li>
+          <li><a href="#">Quizzes</a></li>
+          <li><a href="#">Entertainment</a></li>
+          <li><a href="#">Quotes</a></li>
+        </div>
+        <div class="footer-list">
+          <h3>Company</h3>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Support</a></li>
+        </div>
+        <div class="footer-list">
+          <h3>Social</h3>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">GitHub</a></li>
+        </div>
+        <div class="footer-list">
+          <h3>Legal</h3>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="copyright-text">
+          <p>&copy; 2024 S3 School. All rights reserved.</p>
+          <p>
+            Terms of Service | Privacy Policy | Student Code of Conduct |
+            Academic Policies
+          </p>
+        </div>
+        <div class="footer-logo">
+          <a href="#" style="margin-right: 1rem"
+            ><i
+              class="fa-brands fa-facebook-f"
+              style="font-size: 24px; color: white"
+            ></i
+          ></a>
+          <a href="#" style="margin-right: 1rem"
+            ><i
+              class="fa-brands fa-twitter"
+              style="font-size: 24px; color: white"
+            ></i
+          ></a>
+          <a href="#" style="margin-right: 1rem"
+            ><i
+              class="fa-brands fa-linkedin-in"
+              style="font-size: 24px; color: white"
+            ></i
+          ></a>
+          <a href="#"
+            ><i
+              class="fa-brands fa-github"
+              style="font-size: 24px; color: white"
+            ></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const navbar = document.getElementById("sidebar");
+      function openSidebar() {
+        navbar.classList.add("show");
+      }
+      function closebar() {
+        navbar.classList.remove("show");
+      }
+ const accordion = document.querySelectorAll(".course")
+      const video = document.querySelector(".video");
+
+      accordion.forEach((accordion) => {
+        accordion.addEventListener("click", function(e) {
+        e.preventDefault();
+          const video = this.parentElement.nextElementSibling;
+          
+        this.classList.toggle("active");
+        video.classList.toggle("active");
+        if (isClosing && iframe) {
+            const iframeSrc = iframe.src;
+            iframe.src = iframeSrc; // Reset src to stop video
+          }})
+      })
+      
+
+    </script>
+  </body>
+</html>

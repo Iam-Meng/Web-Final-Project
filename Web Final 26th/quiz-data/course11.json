@@ -1,0 +1,205 @@
+{
+  "courseName": "HTML & CSS Fundamentals",
+  "questions": [
+    {
+      "question": "What is the basic structure of an HTML document?",
+      "options": [
+        "<head><html><body><!DOCTYPE>",
+        "<html><head><body><!DOCTYPE>",
+        "<!DOCTYPE html><html><head><body>",
+        "<DOCTYPE><html><head><body>"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which HTML tag is used to define a paragraph?",
+      "options": [
+        "<paragraph>",
+        "<text>",
+        "<para>",
+        "<p>"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What is the correct way to add a comment in HTML?",
+      "options": [
+        "<!-- comment -->",
+        "// comment",
+        "/* comment */",
+        "# comment"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which attribute is used to specify the destination of a link?",
+      "options": [
+        "src",
+        "href",
+        "link",
+        "url"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is the difference between <div> and <span> tags?",
+      "options": [
+        "<span> is block-level, <div> is inline",
+        "<div> is block-level, <span> is inline",
+        "<div> is for text, <span> is for images",
+        "They are the same"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which CSS selector has the highest specificity?",
+      "options": [
+        "Class selector (.class)",
+        "ID selector (#id)",
+        "Element selector (element)",
+        "Universal selector (*)"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What does CSS stand for?",
+      "options": [
+        "Computer Style Sheets",
+        "Cascading Style Sheets",
+        "Creative Style Sheets",
+        "Colorful Style Sheets"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which property is used to change the font family in CSS?",
+      "options": [
+        "font-style",
+        "font",
+        "font-family",
+        "text-font"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What is the CSS box model?",
+      "options": [
+        "Padding, content, border, margin",
+        "Content, padding, border, margin",
+        "Margin, border, padding, content",
+        "Content, margin, padding, border"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which CSS property is used to control the layout of elements?",
+      "options": [
+        "display",
+        "position",
+        "All of the above",
+        "float"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What is the difference between relative and absolute positioning?",
+      "options": [
+        "They position the same way",
+        "Relative is for text, absolute is for images",
+        "Relative positions relative to normal flow, absolute positions relative to nearest positioned ancestor",
+        "Absolute positions relative to normal flow, relative positions relative to ancestor"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which HTML tag is used to create a form?",
+      "options": [
+        "<label>",
+        "<input>",
+        "<form>",
+        "<fieldset>"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What is the purpose of the alt attribute in <img> tag?",
+      "options": [
+        "Provides alternative text for accessibility",
+        "Adds a caption",
+        "Sets image width",
+        "Links to another page"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which CSS property is used to add space between elements?",
+      "options": [
+        "padding",
+        "spacing",
+        "border",
+        "margin"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What is a CSS pseudo-class?",
+      "options": [
+        "A class defined in HTML",
+        "A type of CSS framework",
+        "A keyword added to selectors to define special states",
+        "A JavaScript class"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which HTML tag is used to define a table header?",
+      "options": [
+        "<head>",
+        "<th>",
+        "<thead>",
+        "<header>"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is the purpose of CSS flexbox?",
+      "options": [
+        "To handle events",
+        "To add colors",
+        "To create flexible layouts",
+        "To create animations"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which HTML attribute is used to specify the type of input element?",
+      "options": [
+        "kind",
+        "input-type",
+        "form-type",
+        "type"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What is CSS specificity?",
+      "options": [
+        "The speed of CSS loading",
+        "Rules for determining which CSS rule applies when multiple rules target the same element",
+        "How specific CSS code should be",
+        "The size of CSS files"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which CSS property is used to make text italic?",
+      "options": [
+        "font-variant",
+        "font-style",
+        "font-weight",
+        "text-decoration"
+      ],
+      "correct": 1
+    }
+  ]
+}

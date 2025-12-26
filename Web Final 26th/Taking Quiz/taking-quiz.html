@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz - S3 School</title>
+    <link rel="stylesheet" href="../quiz-page.css" />
+    <link rel="stylesheet" href="taking-quiz.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- nav -->
+    <nav>
+      <i
+        class="fa-solid fa-bars"
+        id="openSidebar"
+        style="font-size: 24px"
+        onclick="openSidebar()"
+      ></i>
+      <div class="logo"><a href="../../landing.html">S3 School</a></div>
+      <ul id="sidebar">
+        <i class="fa-solid fa-xmark" id="closeSidebar" onclick="closebar()"></i>
+        <li><a href="../../home.html">Home</a></li>
+        <li><a href="../../about.html">About Us</a></li>
+        <li><a href="../../contact.us/contact.html">Contact </a></li>
+        <li><a href="../../support/support.html">Support</a></li>
+      </ul>
+      <button>
+        <a href="#"><i class="fa-regular fa-circle-user"></i>Sign In</a>
+      </button>
+    </nav>
+    <!-- main -->
+    <main class="quiz-main">
+      <div class="quiz-container">
+        <div class="quiz-header">
+          <h1 id="course-title">Loading Quiz...</h1>
+          <div id="question-counter">Question 1 of 20</div>
+        </div>
+        <div class="question-section">
+          <h2 id="question-text">Loading question...</h2>
+          <div id="options-container" class="options-grid">
+            <!-- Options will be dynamically inserted here -->
+          </div>
+          <div id="feedback" class="feedback"></div>
+        </div>
+        <div class="quiz-navigation">
+          <button id="prev-btn" class="nav-btn">Previous</button>
+          <button id="next-btn" class="nav-btn">Next</button>
+          <button id="submit-btn" class="nav-btn submit-btn">
+            Submit Quiz
+          </button>
+        </div>
+      </div>
+    </main>
+    <!-- footer -->
+    <footer>
+      <div class="logo"><a href="../quiz-page.html">S3 School</a></div>
+      <div class="footer-content">
+        <div class="footer-list">
+          <h3>Contents</h3>
+          <li><a href="#">Course</a></li>
+          <li><a href="#">Course Video</a></li>
+          <li><a href="#">Quizzes</a></li>
+          <li><a href="#">Entertainment</a></li>
+          <li><a href="#">Quotes</a></li>
+        </div>
+        <div class="footer-list">
+          <h3>Company</h3>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Support</a></li>
+        </div>
+        <div class="footer-list">
+          <h3>Social</h3>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">GitHub</a></li>
+        </div>
+        <div class="footer-list">
+          <h3>Legal</h3>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="copyright-text">
+          <p>&copy; 2024 S3 School. All rights reserved.</p>
+          <p>
+            Terms of Service | Privacy Policy | Student Code of Conduct |
+            Academic Policies
+          </p>
+        </div>
+        <div class="footer-logo">
+          <a href="#" style="margin-right: 1rem"
+            ><i
+              class="fa-brands fa-facebook-f"
+              style="font-size: 24px; color: white"
+            ></i
+          ></a>
+          <a href="#" style="margin-right: 1rem"
+            ><i
+              class="fa-brands fa-twitter"
+              style="font-size: 24px; color: white"
+            ></i
+          ></a>
+          <a href="#" style="margin-right: 1rem"
+            ><i
+              class="fa-brands fa-linkedin-in"
+              style="font-size: 24px; color: white"
+            ></i
+          ></a>
+          <a href="#"
+            ><i
+              class="fa-brands fa-github"
+              style="font-size: 24px; color: white"
+            ></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="taking-quiz.js"></script>
+  </body>
+</html>

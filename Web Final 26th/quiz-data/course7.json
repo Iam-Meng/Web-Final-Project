@@ -1,0 +1,205 @@
+{
+  "courseName": "Object-Oriented Programming",
+  "questions": [
+    {
+      "question": "What are the four main principles of Object-Oriented Programming?",
+      "options": [
+        "Classes, Objects, Methods, Variables",
+        "Input, Output, Processing, Storage",
+        "Data, Functions, Loops, Conditions",
+        "Encapsulation, Inheritance, Polymorphism, Abstraction"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What is a class in OOP?",
+      "options": [
+        "A blueprint or template for creating objects",
+        "A function",
+        "An instance of an object",
+        "A data type"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What is an object in OOP?",
+      "options": [
+        "A programming language",
+        "A data structure",
+        "An instance of a class",
+        "A blueprint for creating classes"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What is encapsulation in OOP?",
+      "options": [
+        "Inheriting from parent classes",
+        "Creating multiple classes",
+        "Wrapping data and methods into a single unit",
+        "Overloading methods"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What is inheritance in OOP?",
+      "options": [
+        "Creating multiple objects",
+        "A mechanism where one class acquires properties of another",
+        "Declaring variables",
+        "Defining methods"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is polymorphism in OOP?",
+      "options": [
+        "Ability of objects to take many forms",
+        "Method overriding",
+        "Multiple inheritance",
+        "Data hiding"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What is abstraction in OOP?",
+      "options": [
+        "Hiding complex implementation details and showing only essential features",
+        "Defining interfaces",
+        "Creating abstract classes",
+        "All of the above"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which of the following is an access modifier in OOP?",
+      "options": [
+        "protected",
+        "private",
+        "public",
+        "All of the above"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What is method overloading?",
+      "options": [
+        "Multiple methods with same name but different parameters",
+        "Overriding parent class methods",
+        "Creating multiple constructors",
+        "Defining static methods"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What is method overriding?",
+      "options": [
+        "Implementing interfaces",
+        "Redefining a method in subclass that exists in parent class",
+        "Defining abstract methods",
+        "Creating multiple methods with same name"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is a constructor in OOP?",
+      "options": [
+        "A normal member method",
+        "A special method called when object is created",
+        "A static method",
+        "A destructor method"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is a destructor in OOP?",
+      "options": [
+        "A static method",
+        "A normal member method",
+        "A method called when object is destroyed",
+        "A constructor method"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What is an abstract class?",
+      "options": [
+        "A class with no methods",
+        "A class with only concrete methods",
+        "A final class",
+        "A class that cannot be instantiated and may contain abstract methods"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What is an interface in OOP?",
+      "options": [
+        "All of the above",
+        "A way to inherit multiple classes",
+        "A class with all abstract methods",
+        "A contract that specifies methods a class must implement"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What is composition in OOP?",
+      "options": [
+        "A 'has-a' relationship between classes",
+        "A 'uses-a' relationship",
+        "An 'is-a' relationship",
+        "A 'contains-a' relationship"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What is aggregation in OOP?",
+      "options": [
+        "An 'is-a' relationship",
+        "A weak 'has-a' relationship where objects can exist independently",
+        "A strong 'has-a' relationship",
+        "A 'uses-a' relationship"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is the difference between association and composition?",
+      "options": [
+        "They are the same",
+        "Composition is weaker than association",
+        "Association is weaker than composition",
+        "Association is for inheritance"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What is coupling in OOP?",
+      "options": [
+        "Number of objects created",
+        "Number of methods in a class",
+        "Degree of inheritance",
+        "Degree of interdependence between classes"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What is cohesion in OOP?",
+      "options": [
+        "Number of classes in a program",
+        "Degree of coupling between classes",
+        "Degree to which elements of a class belong together",
+        "Number of methods in a class"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which principle suggests that a class should have only one reason to change?",
+      "options": [
+        "Interface Segregation Principle",
+        "Open-Closed Principle",
+        "Liskov Substitution Principle",
+        "Single Responsibility Principle"
+      ],
+      "correct": 3
+    }
+  ]
+}

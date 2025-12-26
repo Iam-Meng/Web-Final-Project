@@ -1,0 +1,205 @@
+{
+  "courseName": "Java Tutorial for Beginner",
+  "questions": [
+    {
+      "question": "Who developed the Java programming language?",
+      "options": [
+        "Microsoft",
+        "Sun Microsystems (now Oracle)",
+        "Google",
+        "Apple"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is the correct syntax for printing 'Hello World' in Java?",
+      "options": [
+        "System.out.println('Hello World');",
+        "cout << 'Hello World';",
+        "print('Hello World');",
+        "printf('Hello World');"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What is the file extension for Java source files?",
+      "options": [
+        ".java",
+        ".exe",
+        ".jar",
+        ".class"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which of the following is the entry point of a Java program?",
+      "options": [
+        "public static void main(String[] args)",
+        "void main()",
+        "int main()",
+        "static void main()"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What is JVM in Java?",
+      "options": [
+        "Java Variable Machine",
+        "Java Virtual Machine",
+        "Java Version Manager",
+        "Java Virtual Memory"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which keyword is used to declare a class in Java?",
+      "options": [
+        "struct",
+        "Class",
+        "interface",
+        "class"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What is the difference between '==' and '.equals()' in Java?",
+      "options": [
+        "They are the same",
+        "== compares references, .equals() compares values",
+        "== compares values, .equals() compares references",
+        "== is for primitives only"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which of the following is used for reading input from console in Java?",
+      "options": [
+        "Scanner",
+        "All of the above",
+        "Console",
+        "BufferedReader"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is a package in Java?",
+      "options": [
+        "A way to organize classes and interfaces",
+        "A class member",
+        "A loop structure",
+        "A data type"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which keyword is used to inherit a class in Java?",
+      "options": [
+        "implements",
+        "inherits",
+        "extends",
+        ":"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What is the purpose of the 'import' statement in Java?",
+      "options": [
+        "To declare variables",
+        "To define functions",
+        "To create loops",
+        "To include classes from other packages"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which of the following is a primitive data type in Java?",
+      "options": [
+        "Integer",
+        "int",
+        "String",
+        "Object"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is an interface in Java?",
+      "options": [
+        "A collection class",
+        "A class with only concrete methods",
+        "A data type",
+        "A reference type that can contain abstract methods"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which keyword is used to implement an interface in Java?",
+      "options": [
+        "extends",
+        "abstract",
+        "interface",
+        "implements"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What is the purpose of the 'final' keyword in Java?",
+      "options": [
+        "To define arrays",
+        "To make variables/constants, methods, or classes unchangeable",
+        "To create loops",
+        "To handle exceptions"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which of the following is a collection framework class in Java?",
+      "options": [
+        "ArrayList",
+        "All of the above",
+        "Vector",
+        "LinkedList"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is exception handling in Java?",
+      "options": [
+        "A mechanism to handle runtime errors",
+        "A data type",
+        "A way to declare variables",
+        "A loop structure"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which exception is thrown when dividing by zero in Java?",
+      "options": [
+        "Exception",
+        "DivideByZeroException",
+        "RuntimeException",
+        "ArithmeticException"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What is a thread in Java?",
+      "options": [
+        "A class member",
+        "A lightweight subprocess",
+        "A loop structure",
+        "A data type"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which of the following is used to handle exceptions in Java?",
+      "options": [
+        "try-except",
+        "catch-throw",
+        "try-catch-finally",
+        "handle-catch"
+      ],
+      "correct": 2
+    }
+  ]
+}

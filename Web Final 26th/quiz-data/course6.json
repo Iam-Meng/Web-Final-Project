@@ -1,0 +1,205 @@
+{
+  "courseName": "Data Structure & Algorithms",
+  "questions": [
+    {
+      "question": "What is a data structure?",
+      "options": [
+        "A database",
+        "A way to organize and store data",
+        "An algorithm",
+        "A programming language"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which of the following is a linear data structure?",
+      "options": [
+        "Array",
+        "Both A and C",
+        "Tree",
+        "Graph"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What is the time complexity of accessing an element in an array by index?",
+      "options": [
+        "O(n²)",
+        "O(n)",
+        "O(1)",
+        "O(log n)"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which data structure follows LIFO (Last In First Out) principle?",
+      "options": [
+        "Linked List",
+        "Queue",
+        "Array",
+        "Stack"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What is the time complexity of inserting an element at the end of a dynamic array?",
+      "options": [
+        "O(log n)",
+        "O(1)",
+        "O(1) amortized",
+        "O(n)"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which of the following is a non-linear data structure?",
+      "options": [
+        "Array",
+        "Stack",
+        "Tree",
+        "Queue"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What is the worst-case time complexity of quicksort?",
+      "options": [
+        "O(log n)",
+        "O(n²)",
+        "O(n log n)",
+        "O(n)"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which algorithm is used to find the shortest path in a weighted graph?",
+      "options": [
+        "Bubble sort",
+        "Dijkstra's algorithm",
+        "Binary search",
+        "Linear search"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is the space complexity of a linked list?",
+      "options": [
+        "O(1)",
+        "O(log n)",
+        "O(n²)",
+        "O(n)"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which sorting algorithm has the best average case time complexity?",
+      "options": [
+        "Selection sort",
+        "Bubble sort",
+        "Insertion sort",
+        "Merge sort"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What is a binary search tree?",
+      "options": [
+        "A complete binary tree",
+        "A balanced tree",
+        "A tree where each node has at most two children and left < right",
+        "A tree with exactly two children per node"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which data structure is used for implementing recursion?",
+      "options": [
+        "Queue",
+        "Array",
+        "Stack",
+        "Linked List"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What is the time complexity of binary search?",
+      "options": [
+        "O(n²)",
+        "O(n log n)",
+        "O(n)",
+        "O(log n)"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which of the following is used to implement priority queues?",
+      "options": [
+        "Queue",
+        "Array",
+        "Heap",
+        "Stack"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What is dynamic programming?",
+      "options": [
+        "A programming paradigm",
+        "A data structure",
+        "A method to solve complex problems by breaking them into simpler subproblems",
+        "A sorting algorithm"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which algorithm is used to find minimum spanning tree?",
+      "options": [
+        "Kruskal's algorithm",
+        "Binary search",
+        "Quick sort",
+        "Dijkstra's algorithm"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What is the time complexity of inserting an element into a hash table?",
+      "options": [
+        "O(1) average case",
+        "O(n)",
+        "O(log n)",
+        "O(1)"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which traversal visits the root node first in a tree?",
+      "options": [
+        "Level order",
+        "Postorder",
+        "Inorder",
+        "Preorder"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What is a graph in data structures?",
+      "options": [
+        "A linear data structure",
+        "A sorting algorithm",
+        "A collection of nodes connected by edges",
+        "A type of tree"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which algorithm is used to detect cycles in a graph?",
+      "options": [
+        "Dijkstra's algorithm",
+        "Kruskal's algorithm",
+        "BFS (Breadth First Search)",
+        "DFS (Depth First Search)"
+      ],
+      "correct": 3
+    }
+  ]
+}

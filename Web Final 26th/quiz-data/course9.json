@@ -1,0 +1,205 @@
+{
+  "courseName": "Introduction to Web Design",
+  "questions": [
+    {
+      "question": "What does HTML stand for?",
+      "options": [
+        "High Tech Modern Language",
+        "Home Tool Markup Language",
+        "HyperText Markup Language",
+        "Hyper Transfer Markup Language"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What does CSS stand for?",
+      "options": [
+        "Cascading Style Sheets",
+        "Creative Style Sheets",
+        "Colorful Style Sheets",
+        "Computer Style Sheets"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which HTML tag is used to define the structure of an HTML document?",
+      "options": [
+        "<html>",
+        "<head>",
+        "<body>",
+        "<!DOCTYPE html>"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which CSS property is used to change the background color?",
+      "options": [
+        "background",
+        "color",
+        "bgcolor",
+        "background-color"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What is the purpose of the <div> tag in HTML?",
+      "options": [
+        "To define a division or section in an HTML document",
+        "To add an image",
+        "To create a list",
+        "To create a link"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which CSS property controls the size of text?",
+      "options": [
+        "font",
+        "size",
+        "text-size",
+        "font-size"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What is responsive web design?",
+      "options": [
+        "Design that adapts to different screen sizes",
+        "Design with animations",
+        "Design with many colors",
+        "Design that loads quickly"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which HTML tag is used to create a hyperlink?",
+      "options": [
+        "<href>",
+        "<url>",
+        "<a>",
+        "<link>"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What is the box model in CSS?",
+      "options": [
+        "A color system",
+        "A way to create boxes",
+        "A model that describes the rectangular boxes generated for elements",
+        "A layout system"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which CSS property is used to control the spacing between elements?",
+      "options": [
+        "padding",
+        "margin",
+        "gap",
+        "spacing"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is a CSS framework?",
+      "options": [
+        "A server",
+        "A database system",
+        "A programming language",
+        "A pre-written CSS code that makes web development faster"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which HTML tag is used to add an image?",
+      "options": [
+        "<photo>",
+        "<pic>",
+        "<img>",
+        "<image>"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What is the purpose of media queries in CSS?",
+      "options": [
+        "To apply different styles for different devices/screen sizes",
+        "To add media files",
+        "To handle events",
+        "To create animations"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which HTML tag is used to create an unordered list?",
+      "options": [
+        "<list>",
+        "<li>",
+        "<ul>",
+        "<ol>"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What is the difference between padding and margin in CSS?",
+      "options": [
+        "Margin is space inside, padding is space outside",
+        "Padding affects background, margin doesn't",
+        "Padding is space inside the element, margin is space outside",
+        "They are the same"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which CSS property is used to make text bold?",
+      "options": [
+        "font-size",
+        "font-weight",
+        "text-decoration",
+        "font-style"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is a wireframe in web design?",
+      "options": [
+        "A high-fidelity design",
+        "A coding framework",
+        "A color palette",
+        "A low-fidelity blueprint of a web page layout"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which HTML tag is used to define a table row?",
+      "options": [
+        "<td>",
+        "<tr>",
+        "<table>",
+        "<th>"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is the purpose of the alt attribute in an image tag?",
+      "options": [
+        "To add a caption",
+        "To provide alternative text for screen readers",
+        "To set image size",
+        "To link the image"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which CSS property is used to create rounded corners?",
+      "options": [
+        "round-border",
+        "border-corner",
+        "corner-radius",
+        "border-radius"
+      ],
+      "correct": 3
+    }
+  ]
+}

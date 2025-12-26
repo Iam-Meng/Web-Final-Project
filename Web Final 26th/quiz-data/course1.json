@@ -1,0 +1,205 @@
+{
+  "courseName": "Introduction to C programming",
+  "questions": [
+    {
+      "question": "What is C programming language?",
+      "options": [
+        "A high-level programming language",
+        "A markup language",
+        "An assembly language",
+        "A low-level programming language"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Who developed the C programming language?",
+      "options": [
+        "Bjarne Stroustrup",
+        "Guido van Rossum",
+        "James Gosling",
+        "Dennis Ritchie"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which of the following is the correct syntax for printing 'Hello World' in C?",
+      "options": [
+        "cout << 'Hello World';",
+        "printf('Hello World');",
+        "System.out.println('Hello World');",
+        "print('Hello World');"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is the file extension for C source files?",
+      "options": [
+        ".cpp",
+        ".py",
+        ".java",
+        ".c"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which header file is required for input/output operations in C?",
+      "options": [
+        "<conio.h>",
+        "<string.h>",
+        "<stdio.h>",
+        "<iostream>"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What does the 'int main()' function represent in a C program?",
+      "options": [
+        "A variable declaration",
+        "The entry point of the program",
+        "A loop structure",
+        "A conditional statement"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which operator is used for assignment in C?",
+      "options": [
+        "===",
+        "==",
+        "=",
+        "!="
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What is the size of an int data type in C (typically)?",
+      "options": [
+        "8 bytes",
+        "1 byte",
+        "4 bytes",
+        "2 bytes"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which of the following is a valid variable name in C?",
+      "options": [
+        "123variable",
+        "my-variable",
+        "myVariable",
+        "my variable"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What does the 'return 0;' statement do in the main function?",
+      "options": [
+        "Indicates successful program execution",
+        "Exits the program with error",
+        "Returns the value 0",
+        "Starts a new function"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which loop is used when the number of iterations is known?",
+      "options": [
+        "do-while loop",
+        "for loop",
+        "while loop",
+        "if-else"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is an array in C?",
+      "options": [
+        "A pointer",
+        "A single variable",
+        "A function",
+        "A collection of similar data types"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which symbol is used to access the address of a variable?",
+      "options": [
+        "#",
+        "&",
+        "@",
+        "*"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is the purpose of the 'break' statement?",
+      "options": [
+        "To return a value",
+        "To exit a loop or switch statement",
+        "To continue to the next iteration",
+        "To declare a variable"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which function is used to read input from the user in C?",
+      "options": [
+        "scanf()",
+        "printf()",
+        "puts()",
+        "gets()"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What is a pointer in C?",
+      "options": [
+        "A data type",
+        "A variable that stores the address of another variable",
+        "An array",
+        "A function"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which of the following is a correct way to declare a pointer?",
+      "options": [
+        "int ptr;",
+        "pointer int ptr;",
+        "ptr int;",
+        "int *ptr;"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What does the 'sizeof' operator return?",
+      "options": [
+        "The address of a variable",
+        "The size of a data type or variable in bytes",
+        "The type of a variable",
+        "The value of a variable"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which header file is used for string operations in C?",
+      "options": [
+        "<math.h>",
+        "<string.h>",
+        "<stdlib.h>",
+        "<stdio.h>"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is the correct way to include a header file in C?",
+      "options": [
+        "#include <filename.h>",
+        "import filename.h",
+        "#include 'filename.h'",
+        "include <filename.h>"
+      ],
+      "correct": 0
+    }
+  ]
+}

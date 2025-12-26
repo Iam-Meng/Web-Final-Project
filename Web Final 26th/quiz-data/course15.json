@@ -1,0 +1,205 @@
+{
+  "courseName": "JavaScript Frameworks (React)",
+  "questions": [
+    {
+      "question": "What is React?",
+      "options": [
+        "A server framework",
+        "A programming language",
+        "A JavaScript library for building user interfaces",
+        "A database"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Who developed React?",
+      "options": [
+        "Apple",
+        "Microsoft",
+        "Google",
+        "Facebook (Meta)"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What is JSX in React?",
+      "options": [
+        "A routing library",
+        "A state management tool",
+        "A syntax extension for JavaScript",
+        "A styling library"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What is a component in React?",
+      "options": [
+        "A CSS class",
+        "An HTML element",
+        "A reusable piece of UI",
+        "A JavaScript function"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which method is used to render a React component?",
+      "options": [
+        "React.render()",
+        "component.render()",
+        "ReactDOM.render()",
+        "render.component()"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What is state in React?",
+      "options": [
+        "An object that holds component data that can change",
+        "A prop value",
+        "A constant",
+        "A static property"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which hook is used to manage state in functional components?",
+      "options": [
+        "useState",
+        "useReducer",
+        "useEffect",
+        "useContext"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What are props in React?",
+      "options": [
+        "Inputs passed to components",
+        "Component internal data",
+        "CSS properties",
+        "Event handlers"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which lifecycle method is called after component mounts?",
+      "options": [
+        "componentDidUpdate",
+        "componentDidMount",
+        "componentWillUnmount",
+        "componentWillMount"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is the purpose of useEffect hook?",
+      "options": [
+        "To handle events",
+        "To create components",
+        "To perform side effects in functional components",
+        "To manage state"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What is the virtual DOM in React?",
+      "options": [
+        "A lightweight copy of the actual DOM",
+        "The real browser DOM",
+        "A database",
+        "A server"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which method is used to update state in class components?",
+      "options": [
+        "updateState()",
+        "setState()",
+        "changeState()",
+        "modifyState()"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is reconciliation in React?",
+      "options": [
+        "The process of updating the DOM to match virtual DOM",
+        "Creating new components",
+        "Managing state",
+        "Handling events"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which hook is used for context in React?",
+      "options": [
+        "useContext",
+        "useReducer",
+        "useEffect",
+        "useState"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What is React Router used for?",
+      "options": [
+        "Server-side routing",
+        "Database routing",
+        "API routing",
+        "Client-side routing"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which command creates a new React app?",
+      "options": [
+        "create react-app",
+        "react new",
+        "npx create-react-app",
+        "npm create-react"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What is the purpose of keys in React lists?",
+      "options": [
+        "To style list items",
+        "To add IDs",
+        "To help React identify which items changed",
+        "To sort items"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which hook manages complex state logic?",
+      "options": [
+        "useEffect",
+        "useContext",
+        "useState",
+        "useReducer"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What is Redux in React?",
+      "options": [
+        "A state management library",
+        "A UI component library",
+        "A testing library",
+        "A routing library"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which method prevents default behavior in React events?",
+      "options": [
+        "preventBehavior()",
+        "stopPropagation()",
+        "stopDefault()",
+        "preventDefault()"
+      ],
+      "correct": 3
+    }
+  ]
+}

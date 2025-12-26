@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nav</title>
+  <link rel="stylesheet" href="s2.css"\> 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav>
+      <i
+        class="fa-solid fa-bars"
+        id="openSidebar"
+        style="font-size: 24px"
+        onclick="openSidebar()"
+      ></i>
+      <div class="logo"><a href="../landing.html">S3 School</a></div>
+      <ul  id="sidebar">
+        <i class="fa-solid fa-xmark" id="closeSidebar" onclick="closebar()"></i>
+        <li><a href="../home.html">Home</a></li>
+        <li><a href="../about.html">About Us</a></li>
+        <li><a href="contact.html">Contact </a></li>
+        <li><a href="../support/support.html">Support</a></li>
+      </ul>
+      <button>
+        <a href="#"><i class="fa-regular fa-circle-user"></i>Sign In</a>
+      </button>
+    </nav>
+    <script>
+      const navbar = document.getElementById("sidebar");
+      function openSidebar() {
+        navbar.classList.add("show");
+      }
+      function closebar() {
+        navbar.classList.remove("show");
+      }
+    </script>
+  <div class="contact-container">
+      <div class="contact-header">
+        <h1>CONTACT US</h1>
+        <p>Leave us a message</p>
+      </div>
+      
+      <div class="contact-content">
+        <div class="form-section">
+          <input type="text" placeholder="Your Name *" required />
+          <input type="email" placeholder="Your Email *" required />
+          <textarea placeholder="Your Message...." required></textarea>
+          <button class="submit-btn">Send →</button>
+        </div>
+        
+        <div class="info-section">
+          <div class="info-item">
+            <div class="info-icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="info-text">
+              <h3>Phone</h3>
+              <p>+855 12345678</p>
+            </div>
+          </div>
+          
+          <div class="info-item">
+            <div class="info-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="info-text">
+              <h3>Email</h3>
+              <p>s3school@tech.edu.kh</p>
+            </div>
+          </div>
+          
+          <div class="info-item">
+            <div class="info-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="info-text">
+              <h3>Address</h3>
+              <p>Preaek Lieb, Chroy Changva, Phnom Penh, Cambodia</p>
+            </div>
+          </div>
+          
+          <div class="info-item">
+            <div style="flex-direction: column; display: flex; gap: 10px; width: 100%;">
+              <div class="social-links">
+                <a href="#" class="social-link" title="S3 School Official">
+                  <i class="fa-brands fa-facebook-f" ></i>
+                </a>
+                <div></div><p>S3 School Oficial</p>
+                <a href="#" class="social-link" title="S3 School Official">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <div></div><p>S3 School Oficial</p>
+              </div>
+              <div class="social-links">
+                <a href="#" class="social-link" title="S3 School Official">
+                  <i class="fa-brands fa-telegram"></i>
+                </a>
+                <div></div><p>S3 School Oficial</p>
+                <a href="#" class="social-link" title="S3 School Official">
+                  <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <div></div><p>S3 School Oficial</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+     <!-- footer -->
+    <footer>
+      <div class="logo"><a href="#">S3 School</a></div>
+      <div class="footer-content">
+        <div class="footer-list">
+          <h3>Contents</h3>
+          <li><a href="#">Course</a></li>
+          <li><a href="#">Course Video</a></li>
+          <li><a href="#">Quizzes</a></li>
+          <li><a href="#">Entertainment</a></li>
+          <li><a href="#">Quotes</a></li>
+        </div>
+        <div class="footer-list">
+          <h3>Company</h3>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Support</a></li>
+        </div>
+        <div class="footer-list">
+          <h3>Social</h3>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">GitHub</a></li>
+        </div>
+        <div class="footer-list">
+          <h3>Legal</h3>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="copyright-text">
+          <p>&copy; 2024 S3 School. All rights reserved.</p>
+          <p>
+            Terms of Service | Privacy Policy | Student Code of Conduct |
+            Academic Policies
+          </p>
+        </div>
+        <div class="footer-logo">
+          <a href="#" style="margin-right: 1rem"
+            ><i
+              class="fa-brands fa-facebook-f"
+              style="font-size: 24px; color: white"
+            ></i
+          ></a>
+          <a href="#" style="margin-right: 1rem"
+            ><i
+              class="fa-brands fa-twitter"
+              style="font-size: 24px; color: white"
+            ></i
+          ></a>
+          <a href="#" style="margin-right: 1rem"
+            ><i
+              class="fa-brands fa-linkedin-in"
+              style="font-size: 24px; color: white"
+            ></i
+          ></a>
+          <a href="#"
+            ><i
+              class="fa-brands fa-github"
+              style="font-size: 24px; color: white"
+            ></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+

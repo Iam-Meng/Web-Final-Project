@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>entertainment</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=BBH+Bogle&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+      body {
+        height: 200vh;
+        box-sizing: border-box;
+        color: rgb(0, 0, 0);
+      }
+      nav {
+        position: sticky;
+        font-size: 1.1rem;
+        height: 35px;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: #15202b;
+        padding-right: 4rem;
+        padding-left: 6rem;
+        z-index: 11;
+        gap: 10px;
+        @media screen and (max-width: 800px) {
+          padding-right: 1rem;
+          padding-left: 1rem;
+        }
+      }
+      .logo a {
+        color: white;
+        text-decoration: none;
+        font-family: "BBH Bogle", sans-serif;
+        font-weight: 200;
+        font-size: 1.7rem;
+      }
+      .logo a:hover {
+        color: #3f8c4b;
+      }
+
+      .logo {
+        margin-right: auto;
+        font-size: 1.5rem;
+      }
+      ul {
+        list-style: none;
+        display: flex;
+        font-size: 1.1rem;
+        gap: 20px;
+        align-items: center;
+      }
+
+      ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 8px 10px;
+        border-radius: 4px;
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;
+      }
+      ul li:hover {
+        background-color: gray;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 15px;
+      }
+      .button a {
+        text-decoration: none;
+        color: white;
+      }
+      button {
+        padding: 8px 6px;
+        width: 100px;
+        border-radius: 0.5rem;
+        border: 1px solid #3f8c4b;
+        background-color: #3f8c4b;
+        color: white;
+        font-size: medium;
+        gap: 5px;
+        margin-left: 10px;
+      }
+      button a {
+        color: white;
+        text-decoration: none;
+      }
+      #openSidebar,
+      #closeSidebar {
+        display: none;
+        color: white;
+      }
+      ul.show {
+        left: 0;
+      }
+      @media screen and (max-width: 800px) {
+        ul {
+          position: fixed;
+          top: 6%;
+          /* bottom:10%; */
+          left: -100%;
+          width: min(15em, 100%);
+          height: 100vh;
+          font-size: 1.1rem;
+          z-index: 10;
+          flex-direction: column;
+          background-color: #15202b;
+          padding-top: 4rem;
+          transition: left 300ms ease-out;
+        }
+        ul li:hover {
+          width: 100%;
+          border-radius: 0;
+          padding: 0.5rem 0;
+          text-align: center;
+          border-radius: 0;
+        }
+        #closeSidebar {
+          display: block;
+          margin-left: auto;
+          margin-bottom: 20px;
+          margin-right: 30px;
+          cursor: pointer;
+        }
+        #openSidebar {
+          display: inline;
+          cursor: pointer;
+        }
+      }
+      footer {
+        background-color: #15202b;
+        color: white;
+        padding: 3.5rem;
+      }
+      .footer-list {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        gap: 20px;
+        text-align: left;
+      }
+      .footer-content {
+        display: flex;
+        justify-content: space-around;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+      }
+      footer h2 {
+        margin-bottom: 2rem;
+      }
+      .footer-list a {
+        text-decoration: none;
+        margin-top: 2rem;
+        color: white;
+      }
+      .footer-list a:hover {
+        color: #3f8c4b;
+      }
+      .copyright {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .footer-logo {
+        display: flex;
+        align-self: flex-end;
+        margin-top: -1rem;
+      }
+      @media screen and (max-width: 896px) {
+        .copyright {
+          display: block;
+        }
+        .footer-logo {
+          justify-content: flex-start;
+          align-items: center;
+          margin-top: 1rem;
+        }
+      }
+      @media screen and (max-width: 780px) {
+        .footer-content {
+          flex-direction: column;
+          gap: 2rem;
+          margin-left: 0;
+          margin-right: 0;
+        }
+        footer h2 {
+          text-align: center;
+          display: block;
+        }
+        .copyright {
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+        }
+        .footer-logo {
+          justify-content: center;
+          align-items: center;
+          margin-top: 1rem;
+        }
+      }
+      .sidebar {
+        height: auto;
+        width: 25%;
+        margin-left: 3rem;
+        margin-right: 3rem;
+      }
+      .main {
+        display: flex;
+        gap: 1rem;
+      }
+      /* content part */
+      .sticky {
+        width: 19.5rem;
+        height: 400px;
+        position: sticky;
+        top: 90px;
+        /* margin-left: 5.5; */
+        margin-left: 20%;
+        border: 1.7px solid black;
+        border-radius: 1rem;
+        background-color: #fafaf9;
+        padding-top: 1rem;
+        z-index: 10;
+        margin-bottom: 1.5rem;
+        gap: 0.5rem;
+        display: flex;
+        flex-direction: column;
+      }
+      .btn-back {
+        padding: 0.8rem;
+        margin: 1.5rem 0.5rem 1.5rem 3rem;
+        font-size: 16px;
+        background-color: #3f8c4b;
+        color: white;
+        border: none;
+        border-radius: 0.7rem;
+        cursor: pointer;
+        transition: 0.2s ease;
+      }
+      .btn-back:hover {
+        transform: translate(-5px);
+      }
+      .sticky h3 {
+        padding-left: 1.5rem;
+        margin-top: 0.8rem;
+        margin-bottom: 0.8rem;
+        font-size: 1.4rem;
+      }
+      .sticky a {
+        list-style: none;
+        padding: 1rem 0rem 1rem 0rem;
+        font-size: 1.2rem;
+        width: 100%;
+        text-align: left;
+        height: 20%;
+      }
+      .sticky a:hover {
+        /* background-color: #a8a8af; */
+        background-color: #d6d6d6;
+        width: 100%;
+        border-radius: 0rem;
+        cursor: pointer;
+      }
+      #stand {
+        background-color: #3f8c4b;
+        color: white;
+      }
+
+      .sticky a {
+        text-decoration: none;
+        color: black;
+      }
+      .sticky span {
+        padding-left: 1.5rem;
+      }
+      #last-child {
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+      }
+      .middle {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        padding: 2rem 2.5rem 2rem 2.5rem;
+      }
+      .middle img {
+        width: 100%;
+        /* height: auto; */
+        object-fit: cover;
+        border-radius: 0.5rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .middle img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+      }
+      @media screen and (max-width: 1080px) {
+        .middle {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media screen and (max-width: 768px) {
+        .middle {
+          gap: 1rem;
+          padding: 2rem 1rem;
+        }
+      }
+      @media screen and (max-width: 525px) {
+        .middle {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+          padding: 1rem;
+        }
+        .middle img {
+          width: 85%; 
+          max-width: 380px; 
+          height: auto; 
+          margin: 0.8rem auto;
+          display: block;
+          border-radius: 0.4rem;
+        }
+      }
+
+      @media screen and (max-width: 1080px) {
+        .sticky {
+          width: 17.5rem;
+          margin-left: 8%;
+          border: 1px solid black;
+        }
+        .sticky a {
+          font-size: 1.1rem;
+          height: 10%;
+          padding: 0.8rem 0rem;
+        }
+        .sticky h3 {
+          padding-left: 1.2rem;
+          font-size: 1.2rem;
+          margin-bottom: 0.6rem;
+        }
+        .sticky span {
+          padding-left: 1.3rem;
+        }
+        .btn-back {
+          margin: 1.3rem 2rem;
+          padding: 0.6rem;
+          font-size: 18px;
+        }
+      }
+      @media screen and (max-width: 768px) {
+        .sidebar {
+          margin-left: 2rem;
+        }
+        .sticky {
+          width: 13rem;
+          margin-left: 1rem;
+          height: 300px;
+        }
+        .sticky h3 {
+          padding-left: 1rem;
+          font-size: 1.1rem;
+          margin-bottom: 0.6rem;
+        }
+        .sticky a {
+          padding: 0.95rem 0 0.3rem 0;
+        }
+        .sticky span {
+          padding-left: 1.1rem;
+        }
+        .btn-back {
+          margin: 1.3rem 1.3rem;
+          font-size: 16px;
+        }
+        .middle h2 {
+          font-size: 1.2rem;
+        }
+        .middle {
+          padding: 1rem 3rem;
+          width: 85%;
+        }
+        .course {
+          border: 1.2px solid black;
+          padding: 1rem 1.2rem;
+          font-size: 1rem;
+        }
+      }
+      @media screen and (max-width: 525px) {
+        .sidebar {
+          margin-left: 1rem;
+        }
+        .middle {
+          padding: 1rem 1.5rem;
+          /* width: 75%; */
+          width: auto;
+        }
+        .main {
+          flex-direction: column;
+        }
+        .sticky {
+          width: 80vw;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+        }
+        .sticky a {
+          text-align: center;
+        }
+        .btn-back {
+          margin: 0.35rem 0.35rem;
+        }
+        .middle img {
+          width: 30%;
+          height: 40%;
+          border-radius: 0.3rem;
+        }
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav>
+      <i
+        class="fa-solid fa-bars"
+        id="openSidebar"
+        style="font-size: 24px"
+        onclick="openSidebar()"
+      ></i>
+      <div class="logo"><a href="landing.html">S3 School</a></div>
+      <ul id="sidebar">
+        <i class="fa-solid fa-xmark" id="closeSidebar" onclick="closebar()"></i>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.us/contact.html">Contact </a></li>
+        <li><a href="support/support.html">Support</a></li>
+      </ul>
+      <button>
+        <a href="#"><i class="fa-regular fa-circle-user"></i>Sign In</a>
+      </button>
+    </nav>
+    <div class="main">
+      <div class="sidebar">
+        <a href="landing.html"><button class="btn-back">back</button></a>
+
+        <!-- content part -->
+        <div class="sticky">
+          <h3>Contents</h3>
+          <a href="home.html"
+            ><div><span>Course</span></div></a
+          >
+          <a href="course-video.html"
+            ><div><span>Course Video</span></div></a
+          >
+          <a href="Web Final 26th/Quiz Page/quiz-page.html"
+            ><div><span>Quizzes</span></div></a
+          >
+          <a href="entertainment.html" id="stand"
+            ><div><span>Entertainment</span></div></a
+          >
+          <a href="quotes.html" id="last-child"
+            ><div><span>Quotes</span></div></a
+          >
+        </div>
+      </div>
+      <!-- course-content -->
+      <div class="middle">
+        <img src="picture/meme-pic/a1.jpg" alt="hleo" />
+        <img src="picture/meme-pic/a2.jpg" alt="picture meme" />
+        <img src="picture/meme-pic/a3.jpg" alt="picture meme" />
+        <img src="picture/meme-pic/a4.jpg" alt="picture meme" />
+        <img
+          src="picture/meme-pic/debuggingBugsWhileVibinBro  Visit….jpg"
+          alt="picture meme"
+        />
+        <img
+          src="picture/meme-pic/How , how, how thins word will never leave you for….jpg"
+          alt="picture meme"
+        />
+        <img src="picture/meme-pic/m1jpg.jpg" alt="picture meme" />
+        <img src="picture/meme-pic/m2.jpg" alt="picture meme" />
+        <img src="picture/meme-pic/m3.jpg" alt="picture meme" />
+        <img src="picture/meme-pic/m4.jpg" alt="picture meme" />
+        <img src="picture/meme-pic/m5.jpg" alt="picture meme" />
+        <img src="picture/meme-pic/m6.jpg" alt="picture meme" />
+        <img src="picture/meme-pic/m7.jpg" alt="picture meme" />
+        <img src="picture/meme-pic/m8.jpg" alt="picture meme" />
+        <img src="picture/meme-pic/m9.jpg" alt="picture meme" />
+        <img src="picture/meme-pic/meme.jpg" alt="picture meme" />
+        <img
+          src="picture/meme-pic/The moment when your code doesn't work….jpg"
+          alt="picture meme"
+        />
+      </div>
+      <!-- whitespace -->
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <div class="logo"><a href="landing.html">S3 School</a></div>
+      <div class="footer-content">
+        <div class="footer-list">
+          <h3>Contents</h3>
+          <li><a href="home.html">Course</a></li>
+          <li><a href="#">Course Video</a></li>
+          <li><a href="#">Quizzes</a></li>
+          <li><a href="#">Entertainment</a></li>
+          <li><a href="#">Quotes</a></li>
+        </div>
+        <div class="footer-list">
+          <h3>Company</h3>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Support</a></li>
+        </div>
+        <div class="footer-list">
+          <h3>Social</h3>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">GitHub</a></li>
+        </div>
+        <div class="footer-list">
+          <h3>Legal</h3>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="copyright-text">
+          <p>&copy; 2024 S3 School. All rights reserved.</p>
+          <p>
+            Terms of Service | Privacy Policy | Student Code of Conduct |
+            Academic Policies
+          </p>
+        </div>
+        <div class="footer-logo">
+          <a href="#" style="margin-right: 1rem"
+            ><i
+              class="fa-brands fa-facebook-f"
+              style="font-size: 24px; color: white"
+            ></i
+          ></a>
+          <a href="#" style="margin-right: 1rem"
+            ><i
+              class="fa-brands fa-twitter"
+              style="font-size: 24px; color: white"
+            ></i
+          ></a>
+          <a href="#" style="margin-right: 1rem"
+            ><i
+              class="fa-brands fa-linkedin-in"
+              style="font-size: 24px; color: white"
+            ></i
+          ></a>
+          <a href="#"
+            ><i
+              class="fa-brands fa-github"
+              style="font-size: 24px; color: white"
+            ></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const navbar = document.getElementById("sidebar");
+      function openSidebar() {
+        navbar.classList.add("show");
+      }
+      function closebar() {
+        navbar.classList.remove("show");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,205 @@
+{
+  "courseName": "TailWind Frameworks",
+  "questions": [
+    {
+      "question": "What is Tailwind CSS?",
+      "options": [
+        "A JavaScript framework",
+        "A utility-first CSS framework",
+        "A backend framework",
+        "A component-based framework"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is the main philosophy of Tailwind CSS?",
+      "options": [
+        "Inline styles",
+        "Semantic class names",
+        "Component-based approach",
+        "Utility-first approach with low-level utility classes"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "How do you install Tailwind CSS?",
+      "options": [
+        "Via Git clone",
+        "Via npm or CDN",
+        "Via package manager only",
+        "Download ZIP file"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is the purpose of the @tailwind directive?",
+      "options": [
+        "To import fonts",
+        "To define variables",
+        "To create custom components",
+        "To inject Tailwind's base, components, and utilities styles"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which class is used to set background color to blue?",
+      "options": [
+        "bg-blue-500",
+        "color-blue",
+        "background-blue",
+        "blue-bg"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What does the number in 'text-lg' represent?",
+      "options": [
+        "Line height",
+        "Font weight",
+        "Letter spacing",
+        "Size level (lg = large)"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which class creates a flex container?",
+      "options": [
+        "display-flex",
+        "flex",
+        "container-flex",
+        "flex-container"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is the purpose of responsive prefixes in Tailwind?",
+      "options": [
+        "To optimize performance",
+        "To apply styles at different breakpoints",
+        "To create responsive images",
+        "To handle mobile navigation"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which prefix is used for small screens in Tailwind?",
+      "options": [
+        "xs:",
+        "sm:",
+        "mobile:",
+        "small:"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is the spacing scale in Tailwind based on?",
+      "options": [
+        "Rem units (0.25rem increments)",
+        "Pixels",
+        "Percentages",
+        "Em units"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which class adds padding on all sides?",
+      "options": [
+        "padding-4",
+        "p-4",
+        "all-pad-4",
+        "pad-4"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What does 'hover:' prefix do?",
+      "options": [
+        "Handles mouse events",
+        "Adds transitions",
+        "Applies styles on hover",
+        "Creates hover effects"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which class makes an element full width?",
+      "options": [
+        "width-full",
+        "w-full",
+        "max-width",
+        "full-width"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is the purpose of the 'container' class?",
+      "options": [
+        "Adds padding",
+        "Centers content and applies max-widths at breakpoints",
+        "Creates a container div",
+        "Creates a grid"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which class creates a grid layout?",
+      "options": [
+        "grid",
+        "layout-grid",
+        "display-grid",
+        "grid-layout"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What does 'col-span-2' do in grid?",
+      "options": [
+        "Makes element span 2 columns",
+        "Adds column gap",
+        "Creates 2 columns",
+        "Sets column width"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which class adds a shadow to an element?",
+      "options": [
+        "box-shadow",
+        "drop-shadow",
+        "shadow-lg",
+        "shadow"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What is the purpose of 'purge' in Tailwind config?",
+      "options": [
+        "To configure colors",
+        "To remove unused CSS in production",
+        "To set breakpoints",
+        "To add new utilities"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which directive is used to create custom utilities?",
+      "options": [
+        "@apply",
+        "@utilities",
+        "@custom",
+        "@mixin"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What is Tailwind's approach to customization?",
+      "options": [
+        "Inline styles",
+        "Component props",
+        "Configuration file (tailwind.config.js)",
+        "CSS variables"
+      ],
+      "correct": 2
+    }
+  ]
+}
