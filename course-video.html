@@ -15,7 +15,6 @@
         height: 200vh;
         box-sizing: border-box;
         color: rgb(0, 0, 0);
-        
       }
       nav {
         position: sticky;
@@ -243,7 +242,7 @@
         display: flex;
         align-items: center;
         margin-bottom: 0.5rem;
-        margin-top:1rem;
+        margin-top: 1rem;
         /* width: 80%; */
       }
       .course:hover {
@@ -415,21 +414,21 @@
         }
       }
       .video {
-        width:85%;
+        width: 85%;
         border-radius: 1.1rem;
         max-height: 0;
         overflow: hidden;
-        padding:0 1rem;
+        padding: 0 1rem;
         background-color: rgb(255, 255, 255);
         transition: max-height 0.4s ease-out, padding 0.4s ease-out;
       }
       .video.active {
         max-height: 350px;
-        border:1px solid black;
+        border: 1px solid black;
         border-top-color: white;
       }
       .video iframe {
-        padding:0.4rem 0 2rem 0;
+        padding: 0.4rem 0 2rem 0;
         align-items: center;
       }
     </style>
@@ -449,8 +448,8 @@
         style="font-size: 24px"
         onclick="openSidebar()"
       ></i>
-      <div class="logo"><a href="landing.html">S3 School</a></div>
-      <ul  id="sidebar">
+      <div class="logo"><a href="index.html">S3 School</a></div>
+      <ul id="sidebar">
         <i class="fa-solid fa-xmark" id="closeSidebar" onclick="closebar()"></i>
         <li><a href="home.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
@@ -463,18 +462,18 @@
     </nav>
     <div class="main">
       <div class="sidebar">
-        <a href="landing.html"><button class="btn-back">back</button></a>
+        <a href="index.html"><button class="btn-back">back</button></a>
 
         <!-- content part -->
         <div class="sticky">
           <h3>Contents</h3>
-          <a href="home.html" 
+          <a href="home.html"
             ><div><span>Course</span></div></a
           >
-          <a href="course-video.html" id = "stand"
+          <a href="course-video.html" id="stand"
             ><div><span>Course Video</span></div></a
           >
-          <a href="Web Final 26th/Quiz Page/quiz-page.html"
+          <a href="QuizPage/quiz-page/quiz-page.html"
             ><div><span>Quizzes</span></div></a
           >
           <a href="entertainment.html"
@@ -488,122 +487,356 @@
       <!-- course-content -->
       <div class="middle">
         <h2>Programming</h2>
-        <a href="#" 
-          ><div class="course " ><span>1, Introduction to C programming</span> <i class="fa-solid fa-greater-than" style="font-size:0.8rem;margin-left:auto"></i>
+        <a href="#"
+          ><div class="course">
+            <span>1, Introduction to C programming</span>
+            <i
+              class="fa-solid fa-greater-than"
+              style="font-size: 0.8rem; margin-left: auto"
+            ></i>
           </div>
         </a>
-    
+
         <div class="video">
           <h4>Introduction to C Programming</h4>
-          <iframe width="100%" height="315px" src="https://www.youtube.com/embed/xND0t1pr3KY?si=b151hDO5_NZZMaof" title="YouTube video player" frameborder="0" allow="accelerometer; 
-          autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-           </div>
-  
-         <a href="#"><div class="course"><span>2, Introduction to C++ programming</span><i class="fa-solid fa-greater-than" style="font-size:0.8rem;margin-left:auto"></i></div></a>
+          <iframe
+            width="100%"
+            height="315px"
+            src="https://www.youtube.com/embed/xND0t1pr3KY?si=b151hDO5_NZZMaof"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; 
+          autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
 
-         <div class="video">
+        <a href="#"
+          ><div class="course">
+            <span>2, Introduction to C++ programming</span
+            ><i
+              class="fa-solid fa-greater-than"
+              style="font-size: 0.8rem; margin-left: auto"
+            ></i></div
+        ></a>
+
+        <div class="video">
           <h4>Introduction to C++ Programming</h4>
-          <iframe width="100%" height="315px" src="https://www.youtube.com/embed/SQ0MgUnvy44?si=D3p6T1DsbhxVx_HK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-           encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-         </div>
+          <iframe
+            width="100%"
+            height="315px"
+            src="https://www.youtube.com/embed/SQ0MgUnvy44?si=D3p6T1DsbhxVx_HK"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write;
+           encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
 
-        <a href="#"><div class="course"><span>3, C# Programming Full Course</span><i class="fa-solid fa-greater-than" style="font-size:0.8rem;margin-left:auto"></i></div></a>
+        <a href="#"
+          ><div class="course">
+            <span>3, C# Programming Full Course</span
+            ><i
+              class="fa-solid fa-greater-than"
+              style="font-size: 0.8rem; margin-left: auto"
+            ></i></div
+        ></a>
         <div class="video">
           <h4>C# Full Course</h4>
-          <iframe width="100%" height="315px" src="https://www.youtube.com/embed/wxznTygnRfQ?si=CA6lIriaN4RUxAsc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
-          picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe
+            width="100%"
+            height="315px"
+            src="https://www.youtube.com/embed/wxznTygnRfQ?si=CA6lIriaN4RUxAsc"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+          picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
         </div>
-        
-        <a href="#"><div class="course"><span>4, Java Tutorial for Beginner</span><i class="fa-solid fa-greater-than" style="font-size:0.8rem;margin-left:auto"></i></div></a>
+
+        <a href="#"
+          ><div class="course">
+            <span>4, Java Tutorial for Beginner</span
+            ><i
+              class="fa-solid fa-greater-than"
+              style="font-size: 0.8rem; margin-left: auto"
+            ></i></div
+        ></a>
 
         <div class="video">
           <h4>Java Full Course for Beginner</h4>
-          <iframe width="100%" height="315px" src="https://www.youtube.com/embed/eIrMbAQSU34?si=pJmv7GA1IhSHvoYb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-           gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe
+            width="100%"
+            height="315px"
+            src="https://www.youtube.com/embed/eIrMbAQSU34?si=pJmv7GA1IhSHvoYb"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+           gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
         </div>
 
-        <a href="#"><div class="course"><span>5, Python Tutorial for Beginner</span><i class="fa-solid fa-greater-than" style="font-size:0.8rem;margin-left:auto"></i></div></a>
+        <a href="#"
+          ><div class="course">
+            <span>5, Python Tutorial for Beginner</span
+            ><i
+              class="fa-solid fa-greater-than"
+              style="font-size: 0.8rem; margin-left: auto"
+            ></i></div
+        ></a>
 
         <div class="video">
           <h4>Python for Beginner</h4>
-         <iframe width="100%" height="315px" src="https://www.youtube.com/embed/8wInxp0m3pY?si=PZlkqJuDiVFwDQ4e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-         clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe
+            width="100%"
+            height="315px"
+            src="https://www.youtube.com/embed/8wInxp0m3pY?si=PZlkqJuDiVFwDQ4e"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; 
+         clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
         </div>
 
-        <a href="#"><div class="course"><span>6, Data Structure & Algorithms</span> <i class="fa-solid fa-greater-than" style="font-size:0.8rem;margin-left:auto"></i>
-        </div></a>
+        <a href="#"
+          ><div class="course">
+            <span>6, Data Structure & Algorithms</span>
+            <i
+              class="fa-solid fa-greater-than"
+              style="font-size: 0.8rem; margin-left: auto"
+            ></i></div
+        ></a>
         <div class="video">
           <h4>Data Structure and Algorithms</h4>
-          <iframe width="100%" height="315px" src="https://www.youtube.com/embed/CBYHwZcbD-s?si=KV61JjpPoKrz79hJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
-           clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-        <a href="#"><div class="course"><span>7, Object-Oriented Programming</span><i class="fa-solid fa-greater-than" style="font-size:0.8rem;margin-left:auto"></i></div></a>
-        <div class="video">
-          <h4>Python Object Oriented Programming</h4>
-          <iframe width="100%" height="315px" src="https://www.youtube.com/embed/IbMDCwVm63M?si=E_voN1r-M2Er-x2F" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
-           clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-        <a href="#"><div class="course"><span>8, Database Management(My SQL)</span><i class="fa-solid fa-greater-than" style="font-size:0.8rem;margin-left:auto"></i></div></a> 
-        <div class="video">
-          <h4>SQL Full Course</h4>
-          <iframe width="100%" height="315px" src="https://www.youtube.com/embed/5OdVJbNCSso?si=4t8PbZ7X91HIVrp-" title="YouTube video player" frameborder="0" allow="accelerometer;
-           autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-        <!-- Web development -->
-         <h2>Web Development Course</h2> 
-        <a href="#"><div class="course"><span>9, Introduction to Web Design</span><i class="fa-solid fa-greater-than" style="font-size:0.8rem;margin-left:auto"></i></div></a>
-        <div class="video">
-          <h4>Introduction to Web Design</h4>
-          <iframe width="100%" height="315px" src="https://www.youtube.com/embed/GxmfcnU3feo?si=N0zqsdWcY6uG4TiS" title="YouTube video player" frameborder="0" allow="accelerometer; 
-          autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-        <a href="#"><div class="course"><span>10, UX/UI Design</span><i class="fa-solid fa-greater-than" style="font-size:0.8rem;margin-left:auto"></i></div></a>
-        <div class="video">
-          <h4>Fundamentals of UX/UI</h4>
-          <iframe width="100%" height="315px" src="https://www.youtube.com/embed/aC4W2A67PoY?si=uN6Ek3Gsd8eVXxky" title="YouTube video player" frameborder="0" allow="accelerometer; 
-          autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-        <a href="#"><div class="course"><span>11, HTML & CSS Fundamentals</span><i class="fa-solid fa-greater-than" style="font-size:0.8rem;margin-left:auto"></i></div></a>
-        <div class="video">
-          <h4>HTML&CSS Full Course</h4>
-          <iframe width="100%" height="315px" src="https://www.youtube.com/embed/G3e-cpL7ofc?si=XzU_m1h_2gjw36ua" title="YouTube video player" frameborder="0" allow="accelerometer;
-           autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-        <a href="#"><div class="course"><span>12, JavaScript for Begineer</span><i class="fa-solid fa-greater-than" style="font-size:0.8rem;margin-left:auto"></i></div></a>
-        <div class="video">
-          <h4>JavaScript Full Course</h4>
-          <iframe width="100%" height="315px" src="https://www.youtube.com/embed/lfmg-EJ8gm4?si=gEhEL8F8ZpFGQK9n" title="YouTube video player" frameborder="0" allow="accelerometer; 
-          autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-        <h2>Front-end Framework</h2>
-        <a href="#"><div class="course"><span>13, TypeScript Framework</span><i class="fa-solid fa-greater-than" style="font-size:0.8rem;margin-left:auto"></i></div></a>
-        <div class="video">
-          <h4>TypeScript Full Course</h4>
-          <iframe width="100%" height="315px" src="https://www.youtube.com/embed/d56mG7DezGs?si=XIzN1ZOvlyKiRx1n" title="YouTube video player" frameborder="0" allow="accelerometer; 
-          autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-        <a href="#"><div class="course"><span>14, TailWind Frameworks</span><i class="fa-solid fa-greater-than" style="font-size:0.8rem;margin-left:auto"></i></div></a>
-        <div class="video">
-          <h4>TailWind CSS </h4>
-          <iframe width="100%" height="315px" src="https://www.youtube.com/embed/6biMWgD6_JY?si=VP_SpuT6w-dGs1ff" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-          clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe
+            width="100%"
+            height="315px"
+            src="https://www.youtube.com/embed/CBYHwZcbD-s?si=KV61JjpPoKrz79hJ"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay;
+           clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
         </div>
         <a href="#"
-          ><div class="course"><span>15, JavaScript Frameworks (React)</span><i class="fa-solid fa-greater-than" style="font-size:0.8rem;margin-left:auto"></i></div></a >
-          <div class="video">
-            <h4>React Full Course</h4>
-            <iframe width="100%" height="315px" src="https://www.youtube.com/embed/CgkZ7MvWUAA?si=2ApxsFHo15vMxutM" title="YouTube video player" frameborder="0" allow="accelerometer; 
-            autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          </div>
-
-       
+          ><div class="course">
+            <span>7, Object-Oriented Programming</span
+            ><i
+              class="fa-solid fa-greater-than"
+              style="font-size: 0.8rem; margin-left: auto"
+            ></i></div
+        ></a>
+        <div class="video">
+          <h4>Python Object Oriented Programming</h4>
+          <iframe
+            width="100%"
+            height="315px"
+            src="https://www.youtube.com/embed/IbMDCwVm63M?si=E_voN1r-M2Er-x2F"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay;
+           clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <a href="#"
+          ><div class="course">
+            <span>8, Database Management(My SQL)</span
+            ><i
+              class="fa-solid fa-greater-than"
+              style="font-size: 0.8rem; margin-left: auto"
+            ></i></div
+        ></a>
+        <div class="video">
+          <h4>SQL Full Course</h4>
+          <iframe
+            width="100%"
+            height="315px"
+            src="https://www.youtube.com/embed/5OdVJbNCSso?si=4t8PbZ7X91HIVrp-"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer;
+           autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <!-- Web development -->
+        <h2>Web Development Course</h2>
+        <a href="#"
+          ><div class="course">
+            <span>9, Introduction to Web Design</span
+            ><i
+              class="fa-solid fa-greater-than"
+              style="font-size: 0.8rem; margin-left: auto"
+            ></i></div
+        ></a>
+        <div class="video">
+          <h4>Introduction to Web Design</h4>
+          <iframe
+            width="100%"
+            height="315px"
+            src="https://www.youtube.com/embed/GxmfcnU3feo?si=N0zqsdWcY6uG4TiS"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; 
+          autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <a href="#"
+          ><div class="course">
+            <span>10, UX/UI Design</span
+            ><i
+              class="fa-solid fa-greater-than"
+              style="font-size: 0.8rem; margin-left: auto"
+            ></i></div
+        ></a>
+        <div class="video">
+          <h4>Fundamentals of UX/UI</h4>
+          <iframe
+            width="100%"
+            height="315px"
+            src="https://www.youtube.com/embed/aC4W2A67PoY?si=uN6Ek3Gsd8eVXxky"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; 
+          autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <a href="#"
+          ><div class="course">
+            <span>11, HTML & CSS Fundamentals</span
+            ><i
+              class="fa-solid fa-greater-than"
+              style="font-size: 0.8rem; margin-left: auto"
+            ></i></div
+        ></a>
+        <div class="video">
+          <h4>HTML&CSS Full Course</h4>
+          <iframe
+            width="100%"
+            height="315px"
+            src="https://www.youtube.com/embed/G3e-cpL7ofc?si=XzU_m1h_2gjw36ua"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer;
+           autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <a href="#"
+          ><div class="course">
+            <span>12, JavaScript for Begineer</span
+            ><i
+              class="fa-solid fa-greater-than"
+              style="font-size: 0.8rem; margin-left: auto"
+            ></i></div
+        ></a>
+        <div class="video">
+          <h4>JavaScript Full Course</h4>
+          <iframe
+            width="100%"
+            height="315px"
+            src="https://www.youtube.com/embed/lfmg-EJ8gm4?si=gEhEL8F8ZpFGQK9n"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; 
+          autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <h2>Front-end Framework</h2>
+        <a href="#"
+          ><div class="course">
+            <span>13, TypeScript Framework</span
+            ><i
+              class="fa-solid fa-greater-than"
+              style="font-size: 0.8rem; margin-left: auto"
+            ></i></div
+        ></a>
+        <div class="video">
+          <h4>TypeScript Full Course</h4>
+          <iframe
+            width="100%"
+            height="315px"
+            src="https://www.youtube.com/embed/d56mG7DezGs?si=XIzN1ZOvlyKiRx1n"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; 
+          autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <a href="#"
+          ><div class="course">
+            <span>14, TailWind Frameworks</span
+            ><i
+              class="fa-solid fa-greater-than"
+              style="font-size: 0.8rem; margin-left: auto"
+            ></i></div
+        ></a>
+        <div class="video">
+          <h4>TailWind CSS</h4>
+          <iframe
+            width="100%"
+            height="315px"
+            src="https://www.youtube.com/embed/6biMWgD6_JY?si=VP_SpuT6w-dGs1ff"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; 
+          clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <a href="#"
+          ><div class="course">
+            <span>15, JavaScript Frameworks (React)</span
+            ><i
+              class="fa-solid fa-greater-than"
+              style="font-size: 0.8rem; margin-left: auto"
+            ></i></div
+        ></a>
+        <div class="video">
+          <h4>React Full Course</h4>
+          <iframe
+            width="100%"
+            height="315px"
+            src="https://www.youtube.com/embed/CgkZ7MvWUAA?si=2ApxsFHo15vMxutM"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; 
+            autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
       </div>
       <!-- whitespace -->
     </div>
 
     <!-- footer -->
     <footer>
-      <div class="logo"><a href="landing.html">S3 School</a></div>
+      <div class="logo"><a href="index.html">S3 School</a></div>
       <div class="footer-content">
         <div class="footer-list">
           <h3>Contents</h3>
@@ -677,23 +910,22 @@
       function closebar() {
         navbar.classList.remove("show");
       }
- const accordion = document.querySelectorAll(".course")
+      const accordion = document.querySelectorAll(".course");
       const video = document.querySelector(".video");
 
       accordion.forEach((accordion) => {
-        accordion.addEventListener("click", function(e) {
-        e.preventDefault();
+        accordion.addEventListener("click", function (e) {
+          e.preventDefault();
           const video = this.parentElement.nextElementSibling;
-          
-        this.classList.toggle("active");
-        video.classList.toggle("active");
-        if (isClosing && iframe) {
+
+          this.classList.toggle("active");
+          video.classList.toggle("active");
+          if (isClosing && iframe) {
             const iframeSrc = iframe.src;
             iframe.src = iframeSrc; // Reset src to stop video
-          }})
-      })
-      
-
+          }
+        });
+      });
     </script>
   </body>
 </html>
